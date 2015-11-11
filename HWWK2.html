@@ -6,7 +6,7 @@
 
     <style>
 
-    nav {
+    header {
       background-color: rgb(183,183,183);
     }
 
@@ -19,7 +19,20 @@
       color: white;
       text-shadow: 2px 2px 4px rgb(133, 131, 127);
       text-decoration: none;
+      display: inline;
     }
+
+    nav{
+      float: right;
+
+    }
+    nav li{
+      display: inline;
+    }
+    ul
+{
+    list-style-type: none;
+}
 
     .button {
   padding: 11px 20px 10px 20px;
@@ -32,6 +45,7 @@
   bottom: 100px
   left: 300px
 }
+
     main {
       box-sizing: border-box;
       width: 800px;
@@ -47,24 +61,28 @@
     body {
       font-family: Lucida Grande;
       background-image: url("images/background-week2-homework.png");
+      background-size: 200px 200px;
+      margin: 0;
     }
 
     footer{
     color: rgb(144,139,140);
     text-align: center;
     border-top: 1px solid rgb(224,224,224);
+    max-width: 800px;
     margin-top: 35px;
     font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
 }
     </style>
 
   </head>
   <body>
     <Header>
-
+  <img id="image" src="images/acme-corp-hw-wk2.jpg">
     <nav>
     <ul>
-      <li><img id="image" src="images/acme-corp-hw-wk2.jpg"></li>
       <li><a id="products" href=“http://www.amazon.com”>Products</a></li>
       <li><button class="button" type="button">Sign Up</button></li>
     </ul>
