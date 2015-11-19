@@ -37,11 +37,12 @@
 //FAHRENHEIT TO CELCIUS CALCULATOR
       //set up out work by keeping track of the DOM we will use
 
-      var tempF = document.querySelector(".temp-f");
+//For practice changed name of variables and did 2 query selects
+      var tF = document.querySelector(".temp-f");
       var tempC = document.querySelector(".temp-c");
 
       function calcFahrenheitToCelcius() {
-           var tempFVal = (tempF.value);
+           var tempFVal = (tF.value);
            console.log("the F temp is: " + tempFVal);
            var tempCVal = parseInt((tempFVal - 32) * (5 / 9));
            console.log("the C temp is: " + tempCVal);
@@ -49,39 +50,29 @@
            //if you want to reset the text content, do the next line:
            tempC.textContent = tempC.value;
            return tempC.value;
-       }
 
-       function calcCelciusToFarenheit() {
-           var tempCVal = (tempC.value);
-           var tempFVal = parseInt(tempCVal * (9 / 5) + 32);
-           tempF.value = tempFVal;
-           return tempF.value;
+       }
+       function calcCelciusToFarenheit(tempC) {
+          //  var tempCVal = (tempC.value);
+           var tempFVal = parseInt(tempC * (9 / 5) + 32);
+           tF.value = tempFVal;
+           return tF.value;
        }
 
 //RADIUS TO CIRCUMFERENCE-ONE WAY ONLY
 
-/*
-      var r = document.querySelector('.circum-r');
-      var c = document.querySelector('.circum-c');
-
-      function calcCircumference() {
-           var tempFVal = (tempF.value);
-           console.log("the F temp is: " + tempFVal);
-           var tempCVal = parseInt((tempFVal - 32) * (5 / 9));
-           console.log("the C temp is: " + tempCVal);
-           tempC.value = tempCVal;
-           //if you want to reset the text content, do the next line:
-           tempC.textContent = tempC.value;
-           return tempC.value;
+      function calcCircumference(radius) {
+           var tempCirVal = parseInt(2 * Math.PI * radius);
+           console.log(tempCirVal);
+           return tempCirVal;
        }
+//TRIANGLE
+      function calcLongestSide(a,b) {
+      var longSide = Math.sqrt((a * a) + (b * b))
+      console.log(longSide);
+      return longSide;
+      }
 
-       function calcCelciusToFarenheit() {
-           var tempCVal = (tempC.value);
-           var tempFVal = parseInt(tempCVal * (9 / 5) + 32);
-           tempF.value = tempFVal;
-           return tempF.value;
-       }
-/*
 
     </script>
   </body>
