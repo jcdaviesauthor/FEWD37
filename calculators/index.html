@@ -5,23 +5,6 @@
     <title>Calculators</title>
     <link rel="stylesheet" href="stylesheet.css" media="screen">
 
-    <script>
-    function convertToC() {
-         var temp-fVal = parseFloat(document.getElementById("temp-f").value);
-         var temp-cVal = (temp-fVal - 32) * (5 / 9);
-         document.getElementById("temp-c").value = cTempVal;
-         return false;
-     }
-
-     function convertToF() {
-         var cTempVal = parseFloat(document.getElementById ("temp-c").value);
-         var fTempVal = (cTempVal * (9 / 5)) + 32;
-         console.log(fTempVal);
-         document.getElementById("temp-f").value = fTempVal;
-         return false;
-     }
-    </script>
-
   </head>
   <body>
     <h1>Fahrenheit to Celcius</h1>
@@ -51,6 +34,29 @@
     <script type="text/javascript" src="interface.js"></script>
     <script type="text/javascript">
       // Your code goes here!
+
+      //set up out work by keeping track of the DOM we will use
+
+      var tempF = document.querySelector(".temp-f");
+      var tempC = document.querySelector(".temp-c");
+
+      function calcFahrenheitToCelcius() {
+           var tempFVal = (tempF.value);
+           console.log("the F temp is: " + tempFVal);
+           var tempCVal = parseInt((tempFVal - 32) * (5 / 9));
+           console.log("the C temp is: " + tempCVal);
+           tempC.value = tempCVal;
+           //if you want to reset the text content, do the next line:
+           tempC.textContent = tempC.value;
+           return tempC.value;
+       }
+
+       function calcCelciusToFarenheit() {
+           var tempCVal = (tempC.value);
+           var tempFVal = parseInt(tempCVal * (9 / 5) + 32);
+           tempF.value = tempFVal;
+           return tempF.value;
+       }
     </script>
   </body>
 </html>
