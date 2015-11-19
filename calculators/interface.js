@@ -14,10 +14,6 @@ function calcPy(event) {
 }
 
 
-
-
-
-
 var r = document.querySelector('.circum-r');
 var c = document.querySelector('.circum-c');
 
@@ -32,20 +28,15 @@ function calcC(event) {
 }
 
 
-
-
-
-
-
-var tempF = document.querySelector('.temp-f');
+var temperatureF = document.querySelector('.temp-f');
 var tempC = document.querySelector('.temp-c');
 
-tempF.addEventListener('keyup', calcFtoC);
+temperatureF.addEventListener('keyup', calcFtoC);
 tempC.addEventListener('keyup', calcCtoF);
 
 function calcFtoC(event) {
-  if (tempF.value.length > 0) {
-    tempC.value = calcFahrenheitToCelcius(tempF.value)
+  if (temperatureF.value.length > 0) {
+    tempC.value = calcFahrenheitToCelcius(temperatureF.value)
   } else {
     tempC.value = '';
   }
@@ -53,8 +44,8 @@ function calcFtoC(event) {
 
 function calcCtoF(event) {
   if (tempC.value.length > 0) {
-    tempF.value = calcCelciusToFarenheit(tempC.value)
+    temperatureF.value = calcCelciusToFarenheit(tempC.value)
   } else {
-    tempF.value = '';
+    temperatureF.value = '';
   }
 }
