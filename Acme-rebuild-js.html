@@ -12,10 +12,11 @@ var body = document.querySelector("body");
 var header = document.createElement("header");
 body.appendChild(header);
 
+/*
 var logo-image = document.createElement("logo-image");
-logo-image.setAttribute ("class", "logo-image")
-alt="Acme logo" src="images/acme-corp-hw-wk2.jpg"
-header.appendChild(logo-image);
+logo-image.setAttribute ("class", "logo-image");
+alt="Acme logo" src="images/acme-corp-hw-wk2.jpg";
+header.appendChild(logo-image);*/
 
 // Create the nav
 var nav = document.createElement("nav");
@@ -23,15 +24,38 @@ header.appendChild(nav);
 
 // Create the sign up button
 var a = document.createElement("a");
-a.setAttribute ("class", "products")
+a.setAttribute ("class", "products");
 a.textContent = "Products";
 nav.appendChild(a);
 
 // Create the sign up button
 var button = document.createElement("button");
-button.setAttribute ("class", "button")
+button.setAttribute ("class", "button");
 button.textContent = "Sign up";
 nav.appendChild(button);
+
+/*
+var logo-image = document.createElement("logo-image");
+logo-image.setAttribute ("class", "logo-image");
+alt="Acme logo" src="images/acme-corp-hw-wk2.jpg";
+nav.appendChild(logo-image);*/
+
+
+//Create the main
+var main = document.createElement("main");
+body.appendChild(main);
+
+//Create the section
+var section = document.createElement("section");
+main.appendChild(section);
+
+//Create the first paragraph
+
+var p_one = document.createElement("p_one");
+p_one.textContent = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
+section.appendChild(p_one);
+
+
 
 </script>
 
