@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ACME Corp</title>
+    <link rel="stylesheet" href="acme.css" media="screen" charset="utf-8">
+  </head>
+  <body>
+   <script>
+// Create the header
+var body = document.querySelector("body");
+var header = document.createElement("header");
+body.appendChild(header);
+
+var logo-image = document.createElement("logo-image");
+logo-image.setAttribute ("class", "logo-image")
+alt="Acme logo" src="images/acme-corp-hw-wk2.jpg"
+header.appendChild(logo-image);
+
+// Create the nav
+var nav = document.createElement("nav");
+header.appendChild(nav);
+
+// Create the sign up button
+var a = document.createElement("a");
+a.setAttribute ("class", "products")
+a.textContent = "Products";
+nav.appendChild(a);
+
+// Create the sign up button
+var button = document.createElement("button");
+button.setAttribute ("class", "button")
+button.textContent = "Sign up";
+nav.appendChild(button);
+
+
+
+</script>
+
+  </body>
+</html>
