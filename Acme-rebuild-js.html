@@ -40,7 +40,6 @@ logo-image.setAttribute ("class", "logo-image");
 alt="Acme logo" src="images/acme-corp-hw-wk2.jpg";
 nav.appendChild(logo-image);*/
 
-
 //Create the main
 var main = document.createElement("main");
 body.appendChild(main);
@@ -49,13 +48,27 @@ body.appendChild(main);
 var section = document.createElement("section");
 main.appendChild(section);
 
-//Create the first paragraph
+//Create HEADING
+var h1 = document.createElement("h1");
+h1.textContent = "Welcome to Acme Corp!";
+section.appendChild(h1);
 
+//Create the first paragraph
 var p_one = document.createElement("p_one");
 p_one.textContent = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
 section.appendChild(p_one);
 
+//Create the space between paragraph - NOT WORKING
+/*
+var p_space = document.createElement("p_space");
+p_space.textContent = "                                                                                 ";
+section.appendChild(p_space);
+*/
 
+//Create the second paragraph
+var p_two = document.createElement("p_two");
+p_two.textContent = "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+section.appendChild(p_two);
 
 </script>
 
