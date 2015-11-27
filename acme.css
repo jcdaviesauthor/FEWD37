@@ -5,7 +5,7 @@ header {
   border-bottom: rgb(138, 138, 138);
 }
 
-.logo-image{
+.logo_image{
   position: relative;
   top: 10px;
   left: 20px;
@@ -19,6 +19,11 @@ header {
   margin: 30px 25px 0px 0px;
   padding-top: 0px;
 }
+
+.p_two {
+  line-height: 20px;
+}
+
 
 nav{
   float: right;
