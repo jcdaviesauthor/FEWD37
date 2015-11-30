@@ -107,13 +107,23 @@
       var form = document.querySelector("#new-comment");
 
       link.addEventListener("click", like);
-      link.addEventListener("submit", comment);
+      form.addEventListener("submit", comment);
 
       function like(event) {
-        event.preventDefault();
 
         // Your code for like goes here
-      }
+
+        event.preventDefault();
+         this.count ++;
+
+    /*      var like-count = 0,
+    counterSpan = document.getElementById("like-count");
+
+//add the click listener using addEventListener, this is preferred over inline handlers
+document.getElementById('my-pre').addEventListener('click', function () {
+    counterSpan.innerHTML = ++counter;  */
+});
+
 
       function comment(event) {
         event.preventDefault();
@@ -121,6 +131,6 @@
         // Your code for comments goes here
       }
     </script>
-  
+
 
 </body></html>
