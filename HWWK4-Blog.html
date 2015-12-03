@@ -84,7 +84,7 @@
       </article>
 
       <div class="like">
-        <a href="http://avandamiri.com/fewd-37/week-4/homework/blog.html#" class="like-link">Like</a>
+        <a href=#"http://avandamiri.com/fewd-37/week-4/homework/blog.html#" class="like-link">Like</a>
         (<span class="like-count">0</span>)
       </div>
 
@@ -109,26 +109,52 @@
       link.addEventListener("click", like);
       form.addEventListener("submit", comment);
 
+      var clickCounter = 0;
+
       function like(event) {
-
         // Your code for like goes here
-
         event.preventDefault();
-         this.count ++;
+        clickCounter = clickCounter + 1;
+        console.log(clickCounter);
+        //OR shortcut for clickCounter = clickCounter + 1; is:
+        /*
+       clickCounter++;
+       */
+       var span = document.querySelector(".like-count");
+       span.innerHTML = clickCounter;
 
+       /* or you could do
+      span.textContent = clickCounter;
+      */
+   };
     /*      var like-count = 0,
     counterSpan = document.getElementById("like-count");
-
 //add the click listener using addEventListener, this is preferred over inline handlers
 document.getElementById('my-pre').addEventListener('click', function () {
     counterSpan.innerHTML = ++counter;  */
-});
-
 
       function comment(event) {
         event.preventDefault();
+        //save entered text to a variable wrtten comments
+        var writtenComments = document.querySelector("textarea").value;
+        console.log(writtenComments);
+        //creating a div that you can
 
-        // Your code for comments goes here
+        var newCommentsDiv = document.createElement("div");
+
+        //new commentsdiv = written comments
+        newCommentsDiv.textContent = writtenComments;
+        var commentsCollector = document.querySelector("#comments")
+        newCommentsDiv.classList.add ("comment")
+
+        commentsCollector.appendChild(newCommentsDiv);
+
+
+
+
+        /*
+<textarea id="new-comment-body" placeholder="Leave a comment..."></textarea>
+        // Your code for comments goes here */
       }
     </script>
 
