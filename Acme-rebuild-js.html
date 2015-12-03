@@ -12,23 +12,30 @@ var body = document.querySelector("body");
 var header = document.createElement("header");
 body.appendChild(header);
 
-/*
+/* FIRST TRY DIDN'T WORK
 var logo_image = document.createElement("logo_image");
 logo_image.setAttribute ("class", "logo_image");
 alt="Acme logo" src="images/acme_corp_hw_wk2.jpg";
 header.appendChild(logo_image); */
 
+//THIRD TRY WORKED- YAY!!!!
+var logo_image = document.createElement("img");
+logo_image.setAttribute ("src", "images/acme_corp_hw_wk2.jpg");
+logo_image.setAttribute ('width', 200);
+header.appendChild(logo_image);
+
+
 // Create the nav
 var nav = document.createElement("nav");
 header.appendChild(nav);
 
-/*
+/* SECOND TRY DIDN'T WORK
 var logo_image = document.createElement("logo_image");
 logo_image.setAttribute ("class", "logo_image");
 alt="Acme Logo" src="images/acme_corp_hw_wk2.jpg";
 nav.appendChild(logo_image); */
 
-// Create the sign up button
+// Create the product link
 var a = document.createElement("a");
 a.setAttribute ("class", "products");
 a.textContent = "Products";
@@ -39,8 +46,6 @@ var button = document.createElement("button");
 button.setAttribute ("class", "button");
 button.textContent = "Sign up";
 nav.appendChild(button);
-
-
 
 //Create the main
 var main = document.createElement("main");

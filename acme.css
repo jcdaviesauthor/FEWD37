@@ -7,7 +7,7 @@ header {
 
 .logo_image{
   position: relative;
-  top: 10px;
+  top: 0px;
   left: 20px;
   padding: 0px 0px 10px 0px;
 }
@@ -31,7 +31,6 @@ header {
   padding-top: 1000px;
 
 }
-
 
 nav{
   float: right;
