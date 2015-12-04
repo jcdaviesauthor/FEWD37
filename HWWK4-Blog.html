@@ -139,18 +139,16 @@ document.getElementById('my-pre').addEventListener('click', function () {
         var writtenComments = document.querySelector("textarea").value;
         console.log(writtenComments);
         //creating a div that you can
-
         var newCommentsDiv = document.createElement("div");
 
-        //new commentsdiv = written comments
+        //new commentsdiv = wr itten comments
         newCommentsDiv.textContent = writtenComments;
+
         var commentsCollector = document.querySelector("#comments")
+
         newCommentsDiv.classList.add ("comment")
 
         commentsCollector.appendChild(newCommentsDiv);
-
-
-
 
         /*
 <textarea id="new-comment-body" placeholder="Leave a comment..."></textarea>
