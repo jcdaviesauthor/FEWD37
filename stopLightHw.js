@@ -29,14 +29,16 @@ var stopLightYellow= document.querySelector(".circleMiddleOn");
 stopLightYellow.classList.remove("stopLightOff");
 }
 
-function fButtonGo (event) {
-console.log("this works");
-
-// reset func here
 //caution function
-var stopLightCaution= document.querySelector(".circleMiddleOn");
-stopLightCaution.classList.remove("stopLightOff");
-}
+// function fButtonCaution (event) {
+// console.log("this works");
+//
+// // reset func here
+// //toggle function here?
+// var stopLightCaution= document.querySelector(".circleMiddleOn");
+// stopLightCaution.classList.remove("stopLightOff");
+// }
+
 function fButtonGo (event) {
 console.log("this works");
 
