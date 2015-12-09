@@ -63,8 +63,7 @@
     border:1px solid;
     border-color: rgb(193,193,193);
     border-radius: 10px;
-    background-color: rgb(255,255,255);
-    color:
+    background-color: rgb(254,187,58);
   }
 
 .circleTopOn{
@@ -74,6 +73,7 @@
   margin-top: 20px;
   border: 2px solid;
   background-color: red;
+  transition: background-color: 300ms;
 }
 .circleMiddleOn{
   width:100px;
@@ -82,6 +82,7 @@
   margin-top: 10px;
   border: 2px solid;
   background-color: yellow;
+  transition: background-color: 300ms;
 }
 
 .circleBottomOn{
@@ -91,6 +92,7 @@
   margin-top: 10px;
   border: 2px solid;
   background-color: green;
+  transition: background-color: 300ms;
 
 }
 
@@ -100,5 +102,6 @@
   border-radius: 50px;
   margin-top: 10px;
   border: 2px solid;
-  background-color: rgb(139,69,19);
+  background-color: rgb(76,76,76);
+  transition: background-color: 300ms;
 }
