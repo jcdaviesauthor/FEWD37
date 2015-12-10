@@ -36,6 +36,7 @@ stopLightYellow.classList.remove("stopLightOff");
 // // reset func here
 // //toggle function here?
 // var stopLightCaution= document.querySelector(".circleMiddleOn");
+
 // stopLightCaution.classList.remove("stopLightOff");
 // }
 
