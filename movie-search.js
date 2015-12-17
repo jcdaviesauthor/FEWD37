@@ -42,9 +42,13 @@ for (var i = 0; i < results.Search.length;i++) {
       div.appendChild(img);
       div.appendChild(li);
       div.appendChild(li2);
+
   }
+  // ul.reset();
 }
+
 //Need to reset the fields
+
 // function resetField(){
 //   console.log("this reset works");
 //   stopLightRed.classList.delete("stopLightOff");
