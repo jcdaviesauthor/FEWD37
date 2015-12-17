@@ -33,6 +33,7 @@ for (var i = 0; i < results.Search.length;i++) {
     li.textContent = results.Search[i].Title;
     // li.textContent = results.Search[i].date;
     ul.appendChild(li);
+    console.log();
   }
 }
 
