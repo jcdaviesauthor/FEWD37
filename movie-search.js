@@ -44,7 +44,7 @@ for (var i = 0; i < results.Search.length;i++) {
       div.appendChild(li2);
   }
 }
-//
+//Need to reset the fields
 // function resetField(){
 //   console.log("this reset works");
 //   stopLightRed.classList.delete("stopLightOff");
