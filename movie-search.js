@@ -17,7 +17,7 @@ $("#movie-search-form").submit(formSubmitted);
 // Handle the form submission: go to OMDB and get results
 function formSubmitted(event) {
   event.preventDefault();
-  var url = "http://omdbapi.com/?s=" + $("#query").val();
+  var url = "https://omdbapi.com/?s=" + $("#query").val();
   $.get(url, resultsReceived);
 }
 
