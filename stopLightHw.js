@@ -35,14 +35,7 @@ function resetTurnGrey (){
   stopLightGreen.classList.add("stopLightOff");
 }
 
-// //caution function
-// setInterval function (event) {
-// console.log("this Caution works");
-// resetTurnGrey();
-// //toggle function here?
-// setInterval(toggleSlow, 1000);
-// stopLightCaution.classList.remove("stopLightOff");
-// }
+
 //caution function
 function fButtonCaution (event) {
 console.log("this Caution works");
