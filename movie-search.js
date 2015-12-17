@@ -29,18 +29,24 @@ function resultsReceived(results) {
   var ul= document.querySelector("#movies");
 
 for (var i = 0; i < results.Search.length;i++) {
-    var li= document.createElement("li")
-    li.textContent = results.Search[i].Title;
-    // li.textContent = results.Search[i].date;
-    ul.appendChild(li);
-    // console.log();
+      var div = document.createElement("div")
+      var img = document.createElement("img")
+      var Poster = results.Search[i].Poster;
+      console.log(Poster);
+      img.setAttribute ("src", Poster);
+      var li = document.createElement("li")
+      li.textContent = results.Search[i].Title;
+      var li2 = document.createElement("li")
+      li2.textContent = results.Search[i].Year;
+      ul.appendChild(div);
+      div.appendChild(img);
+      div.appendChild(li);
+      div.appendChild(li2);
   }
 }
-
-// var body = document.querySelector("body");
-// //   var button = document.createElement("button");
-// //   button.setAttribute ("class", "button");
-// //   button.textContent = "Sign up";
-// //   nav.appendChild(button);
-  // Access the array of movies:
-  // results["Search"]
+//
+// function resetField(){
+//   console.log("this reset works");
+//   stopLightRed.classList.delete("stopLightOff");
+// }
+// $('#movie-search-form')[0].reset();
