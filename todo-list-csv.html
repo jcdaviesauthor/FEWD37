@@ -22,23 +22,30 @@ var form = document.querySelector("#new-todo-item-form");
 var input = document.querySelector("#new-todo-item-input");
 var list = document.querySelector("#todo-list");
 
+
 form.addEventListener("submit", addTodo);
+
 
 function addTodo(event) {
   event.preventDefault();
 
-  var li = document.createElement("li");
-  var label = document.createElement("label");
-  var checkbox = document.createElement("input");
-  var span = document.createElement("span");
+  var toDos = input.value.split(", ");
+  console.log(toDos);
 
-  checkbox.setAttribute("type", "checkbox");
-  span.textContent = input.value;
+  for (var i = 0; i < toDos.length; i++) {
+    var li = document.createElement("li");
+    var label = document.createElement("label");
+    var checkbox = document.createElement("input");
+    var span = document.createElement("span");
 
-  label.appendChild(checkbox);
-  label.appendChild(span);
-  li.appendChild(label);
-  list.appendChild(li);
+    checkbox.setAttribute("type", "checkbox");
+
+    span.textContent = toDos[i];
+    label.appendChild(checkbox);
+    label.appendChild(span);
+    li.appendChild(label);
+    list.appendChild(li);
+  }
 }
 
 </script>
