@@ -23,13 +23,20 @@
 
     var firebase = new Firebase("https://blinding-inferno-7422.firebaseio.com");
 
-//Need to add even listener to listen for form submit work on enter too
-    // var username = prompt("username?");
+// Need to add even listener to listen for form submit work on enter too
+    var username = prompt("username?");
     // var comment = docum.....value;
+
+    //call on submit?????
+    function submitComment (event) {
+    var formSubmit= document.querySelector("#comment-form");
+    formSubmit.addEventListener("click", formSubmit);
+
     firebase.push({
-      username: "JC",
+      username: username,
       messageBody: "Hey Avand, is this working?"
-    });
+    })};
+//added extra curlybrace above
     //reading
     firebase.on('child_added', function (snapshot) {
       var data = snapshot.val();
