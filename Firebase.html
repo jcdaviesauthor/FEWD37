@@ -8,7 +8,7 @@
   </head>
   <body>
 
-    <form>
+    <form id="comment-form">
       <input type="text" class="comment" placeholder="Tell Avand UR Secrets">
       <button type="submit" name="submit">Submit!</button>
     </form>
@@ -21,7 +21,11 @@
 
     <script>
 
-    var firebase = new Firebase("https:blinding-inferno-7422.firebaseio.com");
+    var firebase = new Firebase("https://blinding-inferno-7422.firebaseio.com");
+
+//Need to add even listener to listen for form submit work on enter too
+    // var username = prompt("username?");
+    // var comment = docum.....value;
     firebase.push({
       username: "JC",
       messageBody: "Hey Avand, is this working?"
@@ -30,6 +34,7 @@
     firebase.on('child_added', function (snapshot) {
       var data = snapshot.val();
     });
+
 
     </script>
 
