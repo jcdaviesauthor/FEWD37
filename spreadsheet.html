@@ -53,15 +53,14 @@ button {
 
 <script>
 
-//add column (td=column?)
+//add column (td=column)
 //get rows
 var rows = document.querySelectorAll ("tr")
 //loop through each row
 for (var i = 0; i < rows.length; i++) {
   rows[i]
   //Create td
-  var rows = document.createElement("td");
-  checkbox.setAttribute("type", "checkbox");
+  var createRows = document.createElement("td");
 
   span.textContent = toDos[i];
   label.appendChild(checkbox);
@@ -69,7 +68,7 @@ for (var i = 0; i < rows.length; i++) {
 }
 
 
-//Add row (tr=rows?)
+//Add row (tr=rows)
 //get columns
 var cols = document.querySelectorAll ("td")
 
