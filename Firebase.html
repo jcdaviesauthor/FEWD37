@@ -13,9 +13,9 @@
       <button type="submit" name="submit">Submit!</button>
     </form>
 
-    <div class="Messages">
+    <ul class="messages">
 
-    </div>
+    </ul>
 
     <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
 
@@ -24,46 +24,57 @@
     var firebase = new Firebase("https://blinding-inferno-7422.firebaseio.com");
     //To prompt for username, need to save usernams in local storage
     var username = prompt("username?");
-    // var comment = docum.....value;
+    // var comment = document.querySelector(".comment").value;
     var formSubmit= document.querySelector("#comment-form");
     formSubmit.addEventListener("submit", submitComment);
+
 
     //call function on submit
     function submitComment (event) {
       event.preventDefault();
-
       var commentText = document.querySelector(".comment").value;
+      var ulMessages = document.querySelector(".messages");
+      // alert(commentText);
 
       firebase.push({
         username: username,
         messageBody: commentText
       });
-    }
 
-    //reading
-    firebase.on('child_added', function (snapshot) {
-      var data = snapshot.val();
-      console.log(data);
+      //reading may need to move this outside of form submit function
+
+      firebase.on('child_added', function (snapshot) {
+        var data = snapshot.val();
+        // console.log(data);
+        //need to move this too
+        var liMessage = document.createElement("li");
+        var liUsername = document.createElement("li");
+        liMessage.textContent = data.messageBody;
+        liUsername.textContent = data.username;
+        ulMessages.insertBefore(liUsername,ulMessages.firstChild);
+        ulMessages.insertBefore(liMessage, ulMessages.firstChild);
+
+        formSubmit.reset();
+      });
+
+
+
+
 
       // create a new <li> with text in with the message and author
-      var div = document.createElement("div");
-      var li = document.createElement("li");
-      var li2 = document.createElement("li2");
-      var label = document.createElement("label");
-      var label2 = document.createElement("label2");
-      var commentInput = document.createElement("input");
-      var displayUsername = document.createElement("username");
+      // var div = document.createElement("div");
 
+      // var label = document.createElement("label");
+      // var label2 = document.createElement("label2");
+      // var commentInput = document.createElement("input");
+      // var displayUsername = document.createElement("username");
       // checkbox.setAttribute("type", "checkbox");
 
-      commentInput.textContent = input.value;
-      label.appendChild(commentInput);
-      label2.appendChild(displayUsername);
-      li.appendChild(label);
-      li2.appendChild(label2);
-      div.appendChild(li);
-      div.appendChild(li2);
-    });
+      // label.appendChild(commentInput);
+      // label2.appendChild(displayUsername);
+      // li.appendChild(label);
+      // li2.appendChild(label2);
+    };
 
 
     </script>
