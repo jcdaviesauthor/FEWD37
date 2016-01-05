@@ -29,11 +29,12 @@ function resultsReceived(results) {
   var ul= document.querySelector("#movies");
 
 for (var i = 0; i < results.Search.length;i++) {
-      var div = document.createElement("div")
-      var img = document.createElement("img")
+      var div = document.createElement("div");
+      var img = document.createElement("img");
       var Poster = results.Search[i].Poster;
       console.log(Poster);
       img.setAttribute ("src", Poster);
+
       var li = document.createElement("li")
       li.textContent = results.Search[i].Title;
       var li2 = document.createElement("li")
