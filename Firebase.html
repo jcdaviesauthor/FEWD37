@@ -23,7 +23,7 @@
 
     var firebase = new Firebase("https://blinding-inferno-7422.firebaseio.com");
     //To prompt for username, need to save usernams in local storage
-    var username = prompt("username?");
+    var username = prompt("Tell us your username?");
     // var comment = document.querySelector(".comment").value;
     var formSubmit= document.querySelector("#comment-form");
     formSubmit.addEventListener("submit", submitComment);
@@ -33,33 +33,31 @@
     function submitComment (event) {
       event.preventDefault();
       var commentText = document.querySelector(".comment").value;
+      //ask Jason to explain this one????????
       var ulMessages = document.querySelector(".messages");
       // alert(commentText);
-
       firebase.push({
         username: username,
         messageBody: commentText
       });
 
       //reading may need to move this outside of form submit function
-
+      //ask Jason to explain this one????????
       firebase.on('child_added', function (snapshot) {
         var data = snapshot.val();
         // console.log(data);
         //need to move this too
         var liMessage = document.createElement("li");
         var liUsername = document.createElement("li");
+        //other peoples messages
         liMessage.textContent = data.messageBody;
         liUsername.textContent = data.username;
+          //ask Jason to explain this one first child????????
         ulMessages.insertBefore(liUsername,ulMessages.firstChild);
         ulMessages.insertBefore(liMessage, ulMessages.firstChild);
 
         formSubmit.reset();
       });
-
-
-
-
 
       // create a new <li> with text in with the message and author
       // var div = document.createElement("div");
