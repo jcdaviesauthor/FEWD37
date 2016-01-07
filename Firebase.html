@@ -3,7 +3,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>The Best Chat EVER!!!</title>
     <link  rel="stylesheet" href="firebase.css" media="screen" charset="utf-8">
   </head>
   <body>
@@ -14,7 +14,8 @@
     </form>
 
     <ul class="messages">
-
+      <!-- <li class="liMessage">
+      <li class="liUsername"> -->
     </ul>
 
     <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
@@ -27,15 +28,16 @@
     // var comment = document.querySelector(".comment").value;
     var formSubmit= document.querySelector("#comment-form");
     formSubmit.addEventListener("submit", submitComment);
+    //Getting the container, spot on the page ready for later inserting stuff (see insert before)
+    var ulMessages = document.querySelector(".messages");
+      //did not need to do .value for username becasue it was already colected as string via prompt
 
-
-    //call function on submit
+    //This is sending my info in the form of one object with two separate key value pairs to a firebase array
     function submitComment (event) {
-      event.preventDefault();
       var commentText = document.querySelector(".comment").value;
-      //ask Jason to explain this one????????
-      var ulMessages = document.querySelector(".messages");
-      // alert(commentText);
+      console.log("the text is: ",commentText);
+
+      event.preventDefault();
       firebase.push({
         username: username,
         messageBody: commentText
@@ -51,7 +53,15 @@
         var liUsername = document.createElement("li");
         //other peoples messages
         liMessage.textContent = data.messageBody;
+
         liUsername.textContent = data.username;
+
+        // if (data.username === "") {
+        //     data.username === " "
+        // };
+
+        liMessage.classList.add("commentBox");
+        liUsername.classList.add("userNameBox");
           //ask Jason to explain this one first child????????
         ulMessages.insertBefore(liUsername,ulMessages.firstChild);
         ulMessages.insertBefore(liMessage, ulMessages.firstChild);

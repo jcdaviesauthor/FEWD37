@@ -22,20 +22,24 @@ body {
   background-color: gray;
 }
 
-  .messages {
+  .commentBox {
     width: 400px;
-    height: 100px;
+    /*height: 100px;*/
     color: white;
     border: 20px solid purple;
     position: relative;
     background-color: purple;
+    margin-bottom: 50px;
   }
+li{
+  list-style: none;
+}
 
-  .messages::before {
+  .commentBox::before {
     content: "";
     width: 0px;
     height: 0px;
-    border: 100px solid green;
+    border: 40px solid purple;
     border-top-color: purple;
     border-right-color: transparent;
     border-bottom-color: transparent;
@@ -43,7 +47,16 @@ body {
     border-right-width: 50px;
     border-left-width: 50px;
     position: absolute;
-    bottom: -200px;
-    right: 10%;
-    margin-left: 300px;
+    bottom: -100px;
+    /*right: 10%;*/
+    margin-left: 50px;
+}
+
+
+.userNameBox{
+    margin-top: -30px;
+    margin-left: 150px;
+    margin-bottom: 30px;
+    height: 18px;
+
 }
