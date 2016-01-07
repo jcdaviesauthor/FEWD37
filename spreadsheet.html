@@ -53,33 +53,46 @@ button {
 
 <script>
 
-//add column (td=column)
+//add row (td=cell) (tr=rows)
 //get rows
-var rows = document.querySelectorAll ("tr")
-//loop through each row
-for (var i = 0; i < rows.length; i++) {
-  rows[i]
-  //Create td
-  var createRows = document.createElement("td");
-
-  span.textContent = toDos[i];
-  label.appendChild(checkbox);
-  //Append it to the row
+function addRow (){
+  //Find the rows (why need "query selector all")
+  var rows = document.querySelectorAll ("tr");
+  // Then find the last row cell in the column
+  var lastRowCells = table.querySelectorAll ("tr:last-child td");
+// When get to last cell in column create another cell in column
+  for (var i = 0; i < lastRowCells.length; i++) {
+    //Creating a cell at the end of each column???
+    var cell = document.createElement("td");
+  // don't get the first part of this - the "if"
+      if (i == 0) {
+        cell.textContent = table.querySelectorAll("tr").length; +1);
+        else {
+          //setting cell atribute to editable
+          cell.setAttribute("contenteditable", true);
+        }
+        //Append cell to the row
+        row.appendChild(cell);
+      }
+      //append row to table
+      table.appendChild(row);
 }
 
+//Add column (td=cell) (tr=rows)
+//Add columns
+function addColumn (){
 
-//Add row (tr=rows)
-//get columns
-var cols = document.querySelectorAll ("td")
+  var rows = table.querySelectorAll("tr");
+    for (var i = 0; i < rows.length; i++) {
+      var cell = document.createElement("td");
+      cell.setAttribute("contenteditable", true);
 
-//loop through columns?
-for (var i = 0; i < cols.length; i++) {
-  cols[i]
-  //create td
-  //append td to row?
-  //append row to table??
-}
+      rows [i].appendChild(cell);
+    }
+  }
+
+document.querySelector("#add-row").addEventListener("click", addRow)
+document.querySelector("#add-column").addEventListener("click", addColumn)
 
 
-// Your code goes here :-)
 </script>
