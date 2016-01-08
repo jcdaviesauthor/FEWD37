@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The Best Chat EVER!!!</title>
+    <link  rel="stylesheet" href="firebase.css" media="screen" charset="utf-8">
+  </head>
+  <body>
+
+    <form id="comment-form">
+      <input type="text" class="comment" placeholder="Tell Avand UR Secrets">
+      <button type="submit" name="submit">Submit!</button>
+    </form>
+
+    <ul class="messages">
+      <!-- <li class="liMessage">
+      <li class="liUsername"> -->
+    </ul>
+
+    <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
+
+    <script>
+
+    var firebase = new Firebase("https://blinding-inferno-7422.firebaseio.com");
+    //To prompt for username, need to save usernams in local storage
+    var username = prompt("Tell us your username?");
+    // var comment = document.querySelector(".comment").value;
+    var formSubmit= document.querySelector("#comment-form");
+    formSubmit.addEventListener("submit", submitComment);
+    //Getting the container, spot on the page ready for later inserting stuff (see insert before)
+    var ulMessages = document.querySelector(".messages");
+      //did not need to do .value for username becasue it was already colected as string via prompt
+
+    //This is sending my info in the form of one object with two separate key value pairs to a firebase array
+    function submitComment (event) {
+      var commentText = document.querySelector(".comment").value;
+      console.log("the text is: ",commentText);
+
+      event.preventDefault();
+      firebase.push({
+        username: username,
+        messageBody: commentText
+      });
+
+      //reading may need to move this outside of form submit function
+      //ask Jason to explain this one????????
+      firebase.on('child_added', function (snapshot) {
+        var data = snapshot.val();
+        // console.log(data);
+        //need to move this too
+        var liMessage = document.createElement("li");
+        var liUsername = document.createElement("li");
+        //other peoples messages
+        liMessage.textContent = data.messageBody;
+
+        liUsername.textContent = data.username;
+
+        // if (data.username === "") {
+        //     data.username === " "
+        // };
+
+        liMessage.classList.add("commentBox");
+        liUsername.classList.add("userNameBox");
+          //ask Jason to explain this one first child????????
+        ulMessages.insertBefore(liUsername,ulMessages.firstChild);
+        ulMessages.insertBefore(liMessage, ulMessages.firstChild);
+
+        formSubmit.reset();
+      });
+
+      // create a new <li> with text in with the message and author
+      // var div = document.createElement("div");
+
+      // var label = document.createElement("label");
+      // var label2 = document.createElement("label2");
+      // var commentInput = document.createElement("input");
+      // var displayUsername = document.createElement("username");
+      // checkbox.setAttribute("type", "checkbox");
+
+      // label.appendChild(commentInput);
+      // label2.appendChild(displayUsername);
+      // li.appendChild(label);
+      // li2.appendChild(label2);
+    };
+
+
+    </script>
+
+  </body>
+
+</html>
