@@ -12,21 +12,20 @@
     FB.login(function(response) {
       if (response.authResponse) {
        console.log('Welcome!  Fetching your information.... ');
-       FB.api("/me/events", function(response) { console.log(response) })
+       FB.api("/me/events", function(response) {
+         var ul= document.querySelector("#events");
+         for (var i = 0; i < response.data.length;i++) {
+           var event = response.data[i];
+               var li = document.createElement("li");
+               li.textContent = event.name;
+               ul.appendChild(li);
+         }
+       })
       } else {
        console.log('User cancelled login or did not fully authorize.');
       }
     }, { scope:"user_events" });
 
-    ///neeed help here!
-    function eventsReceived(results) {
-    var ul= document.querySelector("#events");
-    for (var i = 0; i < user_events.length;i++) {
-          var ul = document.createElement("ul");
-          ul.textContent = user_events[i].Title;
-          body.appendChild(ul);
-      }
-    }
   });
 
   window.fbAsyncInit = function() {
