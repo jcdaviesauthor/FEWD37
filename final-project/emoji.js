@@ -1,13 +1,22 @@
 
+//Event listener queery selector = $("")
+var nounEvent = $(".noun");
+$(".noun").on( "click", function showNouns (event){
+  console.log( "click" );
+  event.preventDefault();
+  //what goes here? what is my function?
+});
 
-var nounEvent = document.querySelector(",noun");
-nounEvent.addEventListener ("click", playD);
-function playD (event){
-  console.log(event)
-  howl.play("D")
-}
+//from old homeworks
+// Handle the form submission: go to OMDB and get results
+// function formSubmitted(event) {
+//   event.preventDefault();
+//   var url = "https://omdbapi.com/?s=" + $("#query").val();
+//   $.get(url, resultsReceived);
+// }
+
 //Create array for nouns
-//how to link photos in an array? What is the code?
+//how to link photos in an array? 
 var nounArray = {
   // "Search"????:
   [
