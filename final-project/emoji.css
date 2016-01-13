@@ -1,19 +1,51 @@
+section{
+  width: 500px;
+  /*background-image: url("images/site-image/iphone.png");
+  background-size: 50px;*/
+}
+
 .table{
   display:none;
 }
 .tableOn{
   display:block;
+  box-sizing: border-box;
+  border:3px solid white;
+  border-color: white
+  display: none;
+  float: right;
+  width: 400px;
+  background-color: rgb(204,48,125);
+  border-radius: 6px;
 }
 
 button{
-  padding: 11px 20px 10px 20px;
-  margin: 0px 25px 20px 0px;
-  background-color: red;
+  padding: 10px 15px 10px 15px;
+  background-color: rgb(204,48,125);
   color: white;
   border-radius: 6px;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 18px;
   position: relative;
   bottom: 100px
   left: 300px
+  color:transparent !important;
+  text-shadow:none !important;
+  border:none !important;
+  box-shadow:none !important;
+  font-family: sans-serif;
 }
+.emoji {
+  width:50px;
+}
+
+/*does not work*/
+/*.noun{
+    width:50px;
+  }*/
+
+  th{
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+  }
