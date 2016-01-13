@@ -2,7 +2,10 @@ section{
   width: 500px;
   /*background-image: url("images/site-image/iphone.png");
   background-size: 50px;*/
+  /*color: white;*/
+  font-family: sans-serif;
 }
+
 
 .table{
   display:none;
@@ -35,17 +38,34 @@ button{
   box-shadow:none !important;
   font-family: sans-serif;
 }
-.emoji {
-  width:50px;
+
+th{
+  color: white;
+  font-family: sans-serif;
+  font-size: 18px;
 }
 
-/*does not work*/
-/*.noun{
-    width:50px;
-  }*/
+.emoji {
+  width:40px;
+}
 
-  th{
+/*
+These do not work*/
+.noun{
+    width:20px;
+    box-sizing: border-box;
+    margin:auto;
+    border:1px solid;
+    border-color: rgb(193,193,193);
+    border-radius: 6px;
+    background-color: rgb(204,48,125);
     color: white;
-    font-family: sans-serif;
-    font-size: 18px;
+    padding: 1px 2px 1px 2px;
+  }
+
+.verb{
+    width:20px;
+  }
+span{
+    width:20px;
   }

@@ -87,7 +87,7 @@ var nounArray =
 
     {
       "path": "images/noun-emoji/noun-chick.png",
-      "translation": "Chickadee"
+      "translation": "Chick"
     },
 
     {
