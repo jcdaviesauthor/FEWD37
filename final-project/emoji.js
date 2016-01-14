@@ -7,23 +7,27 @@
   function showNouns (event){
     $(".noun-table").addClass("tableOn");
     clickedNounEl = event.target;
+    console.log (clickedNounEl);
+
   };
 //When click on nouns inside the table run function chooseNouns
   $(".nounImg").on( "click", chooseNouns);
   function chooseNouns(nounEvent){
       //keeping track of what they clicked on
-      var imgClicked = nounEvent.target
+      var imgClicked = nounEvent.target;
       console.log (imgClicked);
 
       //clone/recreate the image in the spot on the page because we want it to remain in the table as well
       // NEED TO UPDATE TO JQUERY
-      var clonedImg= document.createElement("img")
+      var clonedImg= document.createElement("img");
       //setting attribute to image
-      clonedImg.setAttribute("src", imgClicked.getAttribute("src"))
+      clonedImg.setAttribute("src", imgClicked.getAttribute("src"));
+      clonedImg.setAttribute("data-translation", imgClicked.getAttribute("data-translation"));
+      clonedImg.setAttribute('class', 'madlib-emoji');
       //the noun we clicked has no text content
       clickedNounEl.textContent = "";
-      // NEW ADD- DOES OT WORK??????
-      $(".noun").addClass("wordOffEmogiOn");
+      // NEW ADD- DOES NOT WORK??????
+      // $(".noun").addClass("wordOffEmogiOn");
       //then we are appending the new cloned image to the page
       clickedNounEl.appendChild(clonedImg);
   };
@@ -79,46 +83,111 @@ var nounArray =
   [
     {
       "path": "images/noun-emoji/noun-cactus.png",
-      "translation": "Cactus"
+      "translation": "cactus"
     },
 
     {
       "path": "images/noun-emoji/noun-chick.png",
-      "translation": "Chick"
+      "translation": "chick"
     },
 
     {
       "path": "images/noun-emoji/noun-monkey.png",
-      "translation": "Monkey"
+      "translation": "monkey"
     },
 
     {
       "path": "images/noun-emoji/noun-piggy.png",
-      "translation": "Piggy"
+      "translation": "piggy"
     },
 
     {
       "path": "images/noun-emoji/noun-shit.png",
-      "translation": "Shit"
+      "translation": "shit"
     },
 
   ];
 
-//Do same array for verbs and adjectives
+  var verbArray =
+    [
+      {
+        "path": "images/verb-emoji/verb-call.png",
+        "translation": "call"
+      },
+
+      {
+        "path": "images/verb-emoji/verb-cry.png",
+        "translation": "cry"
+      },
+
+      {
+        "path": "images/verb-emoji/verb-hate.png",
+        "translation": "hate"
+      },
+
+      {
+        "path": "images/verb-emoji/verb-love.png",
+        "translation": "love"
+      },
+
+      {
+        "path": "images/verb-emoji/verb-see.png",
+        "translation": "see"
+      },
+
+    ];
+
+    var adjectiveArray =
+      [
+        {
+          "path": "images/adjective-emoji/adjective-crabby.png",
+          "translation": "crabby"
+        },
+
+        {
+          "path": "images/adjective-emoji/adjective-fishy.png",
+          "translation": "fishy"
+        },
+
+        {
+          "path": "images/adjective-emoji/adjective-flushed.png",
+          "translation": "flushed"
+        },
+
+        {
+          "path": "images/adjective-emoji/adjective-on-fire.png",
+          "translation": "on fire"
+        },
+
+        {
+          "path": "images/adjective-emoji/adjective-sad.png",
+          "translation": "sad"
+        },
+
+      ];
 
 //FOR LOOP to put translation on the page
-//When click on translate button run function to replace ALL emojis
-// var translateBtn = $("button");
-// //or is it replace emojis????
-// $("button").on( "click", replaceNouns);
-//
-// function replaceNouns() {
-//   //should this be path??? or class noun?
-//   var $span= $("path");
-//
-//   for (var i = 0; i < nounArray.length;i++) {
-//         // var nounTranslation = document.createElement("span")
-//         span.textContent = nounArray[i].translation;
-//         // append translation to span with
-//         span.appendChild(translation);
-//   }
+// When click on translate button run function to replace ALL emojis
+var translateBtn = $("button");
+//or is it replace emojis????
+$("button").on( "click", replaceEmojis);
+
+function replaceEmojis() {
+  //UPDATE TO JQUERY
+  //get parent
+  var images = document.querySelectorAll('.madlib-emoji');
+
+  // for (var i = 0; i < images.length; i++) {
+  //   images[i]
+//then for loop
+  for (var i = 0; i < nounArray.length; i++) {
+    [i]
+    // remove child
+    var remove child = element.removeChild(".madlib-emoji");
+    //get translation from data
+    // set prents text content
+    span.textContent = nounArray[i].data-translation;
+    //append to page
+    span.appendChild(textContent);
+  }
+}
