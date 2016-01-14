@@ -4,6 +4,8 @@ section{
   background-size: 50px;*/
   /*color: white;*/
   font-family: sans-serif;
+/*doesn't work*/
+  /*display: inline;*/
 }
 
 
@@ -16,10 +18,14 @@ section{
   border:3px solid white;
   border-color: white
   display: none;
+  /*doesn't work*/
   float: right;
   width: 400px;
   background-color: rgb(204,48,125);
   border-radius: 6px;
+  /*does not work*/
+  /*position: relative;
+  right: 400px;*/
 }
 
 button{
@@ -55,13 +61,16 @@ These do not work*/
     width:20px;
     box-sizing: border-box;
     margin:auto;
-    border:1px solid;
+    border-bottom: 1px solid;
     border-color: rgb(204,48,125);
-    border-radius: 6px;
+    /*border-radius: 6px;*/
     /*background-color: rgb(204,48,125);*/
     color: black;
     /*padding: 0.5px 1px 0.5px 1px;*/
   }
+.wordOffEmogiOn{
+  color: black;
+}
 
 .verb{
     width:20px;

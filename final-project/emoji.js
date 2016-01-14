@@ -22,6 +22,8 @@
       clonedImg.setAttribute("src", imgClicked.getAttribute("src"))
       //the noun we clicked has no text content
       clickedNounEl.textContent = "";
+      // NEW ADD- DOES OT WORK??????
+      $(".noun").addClass("wordOffEmogiOn");
       //then we are appending the new cloned image to the page
       clickedNounEl.appendChild(clonedImg);
   };
