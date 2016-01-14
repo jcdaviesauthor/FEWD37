@@ -8,42 +8,44 @@ section{
   /*display: inline;*/
 }
 
-
 .table{
   display:none;
 }
+
+main {
+  position: relative;
+}
+
 .tableOn{
   display:block;
   box-sizing: border-box;
   border:3px solid white;
   border-color: white
-  display: none;
-  /*doesn't work*/
   float: right;
   width: 400px;
   background-color: rgb(204,48,125);
   border-radius: 6px;
-  /*does not work*/
-  /*position: relative;
-  right: 400px;*/
+  position: fixed;
+  top:50px;
+  left:68%
 }
 
-button{
-  padding: 10px 15px 10px 15px;
-  background-color: rgb(204,48,125);
-  color: white;
-  border-radius: 6px;
-  text-decoration: none;
-  font-size: 18px;
-  position: relative;
-  bottom: 100px
-  left: 300px
-  color:transparent !important;
-  text-shadow:none !important;
-  border:none !important;
-  box-shadow:none !important;
-  font-family: sans-serif;
-}
+  button{
+    padding: 10px 15px 10px 15px;
+    background-color: rgb(204,48,125);
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    bottom: 100px
+    left: 300px
+    color:transparent !important;
+    text-shadow:none !important;
+    border:none !important;
+    box-shadow:none !important;
+    font-family: sans-serif;
+  }
 
 th{
   color: white;
@@ -54,23 +56,29 @@ th{
 .emoji {
   width:40px;
 }
-
 /*
-These do not work*/
+Why do i need this? Should just use text*/
 .noun{
     width:20px;
     box-sizing: border-box;
     margin:auto;
     border-bottom: 1px solid;
     border-color: rgb(204,48,125);
-    /*border-radius: 6px;*/
-    /*background-color: rgb(204,48,125);*/
     color: black;
-    /*padding: 0.5px 1px 0.5px 1px;*/
   }
-.wordOffEmogiOn{
+
+  .text{
+  width:20px;
+  box-sizing: border-box;
+  margin:auto;
+  border-bottom: 1px solid;
+  border-color: rgb(204,48,125);
   color: black;
-}
+    }
+
+/*.wordOffEmogiOn{
+  border-bottom: none;
+}*/
 
 .verb{
     width:20px;
