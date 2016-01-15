@@ -1,4 +1,4 @@
-section{
+#libSection{
   width: 600px;
   /*background-image: url("images/site-image/iphone.png");
   background-size: 50px;*/
@@ -7,6 +7,9 @@ section{
 /*doesn't work*/
   /*display: inline;*/
 }
+/*li{
+  decoration: none;
+}*/
 
 .table{
   display:none;
