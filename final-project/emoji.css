@@ -1,4 +1,19 @@
-#libSection{
+.titleHeader{
+background-color: rgb(204,48,125);
+}
+
+
+.title{
+  display: inline;
+}
+.libTitle{
+margin-bottom: -50px;
+margin-left: 20px;
+font-size: 60px;
+color: white;
+}
+
+section {
   width: 600px;
   /*background-image: url("images/site-image/iphone.png");
   background-size: 50px;*/
@@ -7,9 +22,6 @@
 /*doesn't work*/
   /*display: inline;*/
 }
-/*li{
-  decoration: none;
-}*/
 
 .table{
   display:none;
