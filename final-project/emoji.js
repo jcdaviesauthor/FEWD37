@@ -7,7 +7,7 @@
   function showNouns (event){
     $(".noun-table").addClass("tableOn");
     clickedNounEl = event.target;
-    console.log (clickedNounEl);
+    // console.log (clickedNounEl);
 
   };
 //When click on nouns inside the table run function chooseNouns
@@ -22,6 +22,7 @@
       var clonedImg= document.createElement("img");
       //setting attribute to image
       clonedImg.setAttribute("src", imgClicked.getAttribute("src"));
+      // Need these to get the data translation
       clonedImg.setAttribute("data-translation", imgClicked.getAttribute("data-translation"));
       clonedImg.setAttribute('class', 'madlib-emoji');
       //the noun we clicked has no text content
@@ -166,7 +167,7 @@ var nounArray =
 
       ];
 
-//FOR LOOP to put translation on the page
+// FOR LOOP to put translation on the page
 // When click on translate button run function to replace ALL emojis
 var translateBtn = $("button");
 //or is it replace emojis????

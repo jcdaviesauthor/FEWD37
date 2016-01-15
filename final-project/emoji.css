@@ -1,5 +1,5 @@
 section{
-  width: 500px;
+  width: 600px;
   /*background-image: url("images/site-image/iphone.png");
   background-size: 50px;*/
   /*color: white;*/
@@ -54,35 +54,91 @@ th{
 }
 
 .emoji {
-  width:40px;
+  width:30px;
 }
 /*
 Why do i need this? Should just use text*/
-.noun{
+/*.noun{
     width:20px;
     box-sizing: border-box;
     margin:auto;
     border-bottom: 1px solid;
     border-color: rgb(204,48,125);
     color: black;
-  }
+  }*/
 
   .text{
   width:20px;
   box-sizing: border-box;
-  margin:auto;
   border-bottom: 1px solid;
-  border-color: rgb(204,48,125);
-  color: black;
+  border-color: black;
+  /*color: black;*/
+    }
+
+    /*.verb{
+      width:20px;
     }
 
 /*.wordOffEmogiOn{
   border-bottom: none;
 }*/
 
-.verb{
+/*span{
     width:20px;
+  }*/
+
+
+
+    .textMessage {
+      width: 450px;
+      color: black;
+      border: 20px solid rgb(231,232,234);
+      position: relative;
+      background-color: rgb(231,232,234);
+      margin-bottom: 50px;
+      border-radius: 20px;
+    }
+/*triangle at bottom*/
+    .textMessage::before {
+      content: "";
+      width: 0px;
+      height: 0px;
+      border: 40px solid rgb(231,232,234);
+      border-top-color: rgb(231,232,234);
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+      border-right-width: 15px;
+      border-left-width: 15px;
+      position: absolute;
+      bottom: -90px;
+      /*right: 10%;*/
+      margin-left: 420px;
   }
-span{
-    width:20px;
+      .brad{
+        background-color: rgb(14,116,255);
+        border: 20px solid rgb(14,116,255);
+        color: white;
   }
+      .brad::before {
+        border: 40px solid rgb(14,116,255);
+        border-top-color: rgb(14,116,255);
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        border-right-width: 15px;
+        border-left-width: 15px;
+        margin-left: 0px;
+    }
+    .textBrittney{
+        margin-top: -35px;
+        margin-left: 380px;
+        margin-bottom: 10px;
+        height: 18px;
+    }
+    .textBrad{
+        margin-top: -35px;
+        margin-left: 50px;
+        margin-bottom: 10px;
+        height: 18px;
+    }
