@@ -1,26 +1,119 @@
-.titleHeader{
-background-color: rgb(204,48,125);
+
+
+/*Emoji-libs home page*/
+body{
+  margin: 0;
 }
 
+.homeH1{
+color: rgb(204,48,125);
+text-align: center;
+font-family: sans-serif:
+}
+
+#homeBunny{
+margin-left:10%;
+position: absolute;
+margin-top: 15px;
+}
+
+#bunnyCircle {
+    width: 200px;
+    height: 200px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    background-color: rgb(204,48,125);
+    position:relative;
+    left:40%;
+}
+
+#madLibSection{
+background-color: rgb(234,227,227);
+height: 450px;
+
+}
+#madLibComponents{
+  /*will need to redo*/
+width: 700px;
+margin: auto;
+position:relative;
+}
+
+.homeH2{
+color: rgb(57,57,57);
+font-family: sans-serif;
+text-align: center;
+vertical-align: center;
+
+}
+
+.madLibBoxes{
+  display: inline-block;
+  margin: auto;
+  postion: absolute;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+.madLibPhotos{
+  /*display: block;*/
+
+
+}
+#iPhoneDiv{
+
+
+}
+
+.square{
+  width: 175px;
+  height: 175px;
+  background-color: rgb(204,48,125);
+  /*display: block;*/
+  /*postion: relative;*/
+}
+
+.rec {
+  width: 175px;
+  height: 35px;
+  background-color: white;
+  color: rgb(57,57,57);
+  text-align: center;
+  padding-top: 20px;
+  font-family: sans-serif;
+  /*display: block;*/
+}
+
+/*mad-lib-iphone css*/
+.titleHeader{
+background-color: rgb(204,48,125);
+height:150px;
+}
+
+/*.titleImage{
+  margin-left: 20px;
+  transition: transform 3s;
+}*/
+
+/*.spin {
+  transform: rotate(1440deg);
+}*/
 
 .title{
   display: inline;
 }
+
 .libTitle{
-margin-bottom: -50px;
 margin-left: 20px;
 font-size: 60px;
 color: white;
 }
 
+
 section {
   width: 600px;
-  /*background-image: url("images/site-image/iphone.png");
-  background-size: 50px;*/
-  /*color: white;*/
   font-family: sans-serif;
-/*doesn't work*/
-  /*display: inline;*/
 }
 
 .table{
@@ -71,38 +164,13 @@ th{
 .emoji {
   width:30px;
 }
-/*
-Why do i need this? Should just use text*/
-/*.noun{
-    width:20px;
-    box-sizing: border-box;
-    margin:auto;
-    border-bottom: 1px solid;
-    border-color: rgb(204,48,125);
-    color: black;
-  }*/
 
   .text{
   width:20px;
   box-sizing: border-box;
   border-bottom: 1px solid;
   border-color: black;
-  /*color: black;*/
     }
-
-    /*.verb{
-      width:20px;
-    }
-
-/*.wordOffEmogiOn{
-  border-bottom: none;
-}*/
-
-/*span{
-    width:20px;
-  }*/
-
-
 
     .textMessage {
       width: 450px;
@@ -135,6 +203,7 @@ Why do i need this? Should just use text*/
         border: 20px solid rgb(14,116,255);
         color: white;
   }
+  /*triangle at bottom*/
       .brad::before {
         border: 40px solid rgb(14,116,255);
         border-top-color: rgb(14,116,255);

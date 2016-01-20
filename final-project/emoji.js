@@ -1,3 +1,11 @@
+// 
+// var wheel = document.querySelector(".titleImage");
+// wheel.addEventListener("click", spin);
+// function spin(event) {
+//   wheel.classList.add("spin");
+// }
+
+
   //When we click on anything with class noun show run function showNouns table
   var nounEvent = $(".noun");
   $(".noun").on( "click", showNouns);
@@ -44,7 +52,7 @@
       clickedNounEl.appendChild(clonedImg);
       clearTable(tableClicked);
   };
-
+//removed class table (forall parts of speach)on to hide table after emoji is chosen
   function clearTable(displayedTable){
       displayedTable.removeClass("tableOn");
   }
@@ -57,7 +65,6 @@
     function showVerbs (event){
       $(".verb-table").addClass("tableOn");
       clickedVerbEl = event.target;
-
     };
 
     $(".verbImg").on( "click", chooseVerb);
@@ -69,7 +76,8 @@
         // NEED TO UPDATE TO JQUERY
         var clonedVerbImg= document.createElement("img")
         clonedVerbImg.setAttribute("src", imgVerbClicked.getAttribute("src"))
-
+        clonedVerbImg.setAttribute("data-translation", imgVerbClicked.getAttribute("data-translation"));
+        clonedVerbImg.setAttribute('class', 'emoji storyEmoji');
         clickedVerbEl.textContent = "";
         clickedVerbEl.appendChild(clonedVerbImg);
         clearTable(tableClicked);
@@ -83,7 +91,6 @@
       function showAdjective (event){
         $(".adjective-table").addClass("tableOn");
         clickedAdjectiveEl = event.target;
-
       };
 
       $(".adjectiveImg").on( "click", chooseAdjective);
@@ -96,7 +103,7 @@
           var clonedAdjectiveImg= document.createElement("img")
           clonedAdjectiveImg.setAttribute("src", imgAdjectivesClicked.getAttribute("src"))
           clonedAdjectiveImg.setAttribute("data-translation", imgAdjectivesClicked.getAttribute("data-translation"))
-
+          clonedAdjectiveImg.setAttribute("class", "emoji storyEmoji");
           clickedAdjectiveEl.textContent = "";
           clickedAdjectiveEl.appendChild(clonedAdjectiveImg);
           clearTable(tableClicked);
