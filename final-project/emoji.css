@@ -37,15 +37,14 @@ height: 450px;
   /*will need to redo*/
 width: 700px;
 margin: auto;
-position:relative;
+/*position:relative;*/
 }
 
 .homeH2{
 color: rgb(57,57,57);
 font-family: sans-serif;
 text-align: center;
-vertical-align: center;
-
+/*vertical-align: center;*/
 }
 
 .madLibBoxes{
@@ -54,15 +53,19 @@ vertical-align: center;
   postion: absolute;
   padding-left: 20px;
   padding-right: 20px;
-
 }
 .madLibPhotos{
   /*display: block;*/
 
-
 }
-#iPhoneDiv{
 
+#squareRec1{
+  position: relative;
+}
+
+#iPhoneImg{
+  position: absolute;
+  /*vertical-align: middle;*/
 
 }
 
@@ -91,14 +94,14 @@ background-color: rgb(204,48,125);
 height:150px;
 }
 
-/*.titleImage{
+.titleImage{
   margin-left: 20px;
   transition: transform 3s;
-}*/
+}
 
-/*.spin {
+.spin {
   transform: rotate(1440deg);
-}*/
+}
 
 .title{
   display: inline;
