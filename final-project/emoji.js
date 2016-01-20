@@ -1,11 +1,8 @@
 
 
-//howw can I get this to start on refresh???
+//how can I get this to start on refresh???
 var titleImage = document.querySelector(".titleImage");
-titleImage.addEventListener("click", spin);
-function spin(event) {
-  titleImage.classList.add("spin");
-}
+titleImage.classList.add(".spin");
 
 
   //When we click on anything with class noun show run function showNouns table
