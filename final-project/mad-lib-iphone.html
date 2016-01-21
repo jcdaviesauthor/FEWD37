@@ -35,6 +35,12 @@
     </ul>
   </nav> -->
 
+  <!-- old code probabaly delete
+    <div id= "titleHeader">
+      <div class="title" id= "iPhoneCircle titleImage"><img alt="Broken heart and iPhone" src="images/site-image/iphone-break-up.png" width="90"></div>
+      <div class="title" id="libTitle">iPhone Breakup</div>
+    </div>  -->
+
       <div id="titleHeader">
         <div id="iPhoneCircle">
         <div class="title" id="titleImage"><img alt="Broken heart and iPhone" src="images/site-image/iphone-break-up.png" width="90"></div>
@@ -49,7 +55,7 @@
 
     <main>
     <div id="dirBackground">
-      <div id= "directions">
+      <div id= "directions" class="monkeyBubbles">
           <h2 id="directionsTitle">Learn Emojis Hidden Meaning</h2>
           <ul id="directionsUl">
             <li class="directionsLi">1. Click on the Parts of Speech (Noun, Verb, Adjective) in the story. </li>
@@ -61,7 +67,7 @@
     </div>
     <section>
       <div class="textSec">
-        <div class = "mad madLibText">
+        <div class = "mad madLibText monkeyBubbles" id="madLibIntro">
           <h2 id="storyTitle">Get Your Lib On:</h2>
           <p>
           Brittney has been thinking about breaking up with Brad - from the Hamptons - for a while, but today was the last straw. Today, she asked Brad to pick up the <span class="noun text wordOffEmogiOn" id = "noun1">NOUN</span>, but he forgot the <span class="noun text wordOffEmogiOn" id = "noun2">NOUN</span>. Who eats <span class="noun1-link">[LINK FROM NOUN1]</span> without [LINK FROM NOUN2]!!!
@@ -116,22 +122,23 @@
         </p>
       </div>
     <div class="textSec">
-      <div class = "mad madLibText">
+      <div class = "mad madLibText monkeyBubbles" id="madLibConclusion">
           <!-- link "Girl's Night" out to other story if its written" -->
           <p>
           Later that evening Britney went on "Girl’s Night Out" to celebrate. And Brad with his <span class="noun text wordOffEmogiOn" id = "noun6">NOUN</span> between his <span class="noun emoji text wordOffEmogiOn" id = "noun7">NOUN</span> returned to the Hamptons to <span class="verb text wordOffEmogiOn" id = "verb3">VERB</span> in his <span class="noun text wordOffImogiOn" id = "noun8">NOUN</span>.
           </p>
           <p>And they lived happily ever after (well at least Brittney did).
+            <p class="finalP"id="finalP">
+            <img class="emoji" alt="Chicken Emoji" src="images/site-image/chicken-emoji.png"><img class="emoji" alt="Menorah Emoji" src="images/site-image/menorah-emoji.png"><img class="emoji" alt="floppy Emoji" src="images/site-image/floppy-emoji.png">The End.<img class="emoji" alt="Cava Emoji" src="images/site-image/cava-emoji.png">
+            <img class="emoji" alt="Cava Emoji" src="images/site-image/cava-emoji.png">
+            <img class="emoji" alt="Lips Emoji" src="images/site-image/lips-emoji.png">
+            <img class="emoji" alt="Lips Emoji" src="images/site-image/lips-emoji.png">
+            </p>
         </div>
 
     </div>
     </p>
-          <p class="finalP"id="finalP">
-          The End.<img class="emoji" alt="Chicken Emoji" src="images/site-image/chicken-emoji.png"><img class="emoji" alt="Menorah Emoji" src="images/site-image/menorah-emoji.png"><img class="emoji" alt="floppy Emoji" src="images/site-image/floppy-emoji.png"><img class="emoji" alt="Cava Emoji" src="images/site-image/cava-emoji.png">
-          <img class="emoji" alt="Cava Emoji" src="images/site-image/cava-emoji.png">
-          <img class="emoji" alt="Lips Emoji" src="images/site-image/lips-emoji.png">
-          <img class="emoji" alt="Lips Emoji" src="images/site-image/lips-emoji.png">
-          </p>
+
 
       </section>
     </main>
@@ -185,7 +192,7 @@
 </footer>
   <!-- add tables for verbs and adjective when we fix table above -->
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="https://cdn.rawgit.com/nnattawat/flip/v1.0.19/dist/jquery.flip.min.js">
+    <!-- <script src="https://cdn.rawgit.com/nnattawat/flip/v1.0.19/dist/jquery.flip.min.js"> -->
 
     <script src="emoji.js"></script>
 

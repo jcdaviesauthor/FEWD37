@@ -204,10 +204,12 @@ font-family:'Muli', sans-serif;
 /*color: rgb(204,48,125);*/
 color: white;
 display: inline;
-/*margin-bottom: 50px;
-padding-bottom: 50px;*/
-/*NEED TO FIX THIS FORMATING
-vertical-align: super;*/
+/*margin-bottom: 50px;*/
+padding-bottom: 50px;
+/*line-height: 200px;*/
+position: relative;
+top:-70px;
+
 }
 
 .mad{
@@ -244,10 +246,36 @@ vertical-align: super;*/
   /*margin-top: 100px;*/
 
 }
-
-#dirBackground{
-background-color: rgb(234,227,227);
+.monkeyBubbles {
+  width: 450px;
+  color: black;
+  border: 20px solid rgb(234,227,227);
+  position: relative;
+  background-color: rgb(234,227,227);
+  margin-bottom: 50px;
+  border-radius: 20px;
 }
+/*triangle at bottom*/
+.monkeyBubbles::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border: 40px solid rgb(231,232,234);
+  border-top-color: rgb(231,232,234);
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-right-width: 15px;
+  border-left-width: 15px;
+  position: absolute;
+  bottom: -90px;
+  /*right: 10%;*/
+  margin-left: 420px;
+}
+
+/*#dirBackground{
+background-color: rgb(234,227,227);
+}*/
 
 #directionsUl{
   /*NEED TO FIGURE OUT WHY IT IS OFF CENTER*/
@@ -267,7 +295,7 @@ section{
   /*margin-right: auto;
   margin-left:100px;*/
   background-color: white;
-  border: 5px solid rgb(204,48,125);
+  /*border: 5px solid rgb(204,48,125);*/
   margin-left: 100px;
   width: 675px;
   /*padding-top: 5px;
@@ -315,6 +343,7 @@ main {
   padding: 10px;
 
   /*padding-bottom: 5px;*/
+    width: 675px;
 
 }
 .textSec{
@@ -332,7 +361,7 @@ main {
   /*margin-top: 100px;
   margin-bottom: 100px;*/
   /*NEEDTO FIX THIS CODE*/
-  margin-left: 175px;
+  /*margin-left: 175px;*/
   line-height: 175%;
   /*text-align: center;*/
 
@@ -455,7 +484,7 @@ footer{
 }
 
 
-#card{
+/*#card{
   display:inline;
 
 }
@@ -465,7 +494,7 @@ footer{
 .back{
   background-color: red;
 
-}
+}*/
 
     /*flipping between emoji and words
 
