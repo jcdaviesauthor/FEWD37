@@ -1,15 +1,26 @@
 /*EMOJI HOME PAGE EMOJI HOME PAGE EMOJI HOME PAGE EMOJI HOME PAGE EMOJI HOME PAGE EMOJI HOME PAGE*/
 
-
+body{
+  margin:0px;
+}
 /*NAV NAV NAV NAV NAV NAV */
 #navHome{
 float: right;
 /*padding-bottom: 100px;*/
-display:block;
+/*display:block;*/
 font-family: 'Muli', sans-serif;
 font-size: 16px;
 /*NEED A BETER SOLUTION*/
-padding-left: 400px;
+/*padding-left: 400px;*/
+}
+
+.clearFix:before, .clearFix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
 }
 
 .homeBarli{
@@ -29,14 +40,13 @@ display: inline;
   margin-right: 50px;
 }
 
-
-
 .homeH1{
 color: rgb(204,48,125);
-text-align: center;
+/*text-align: center;*/
 font-family:'Muli', sans-serif;
 font-weight:bold;
-margin-top:20px;
+/*margin-top:20px;*/
+margin: 20px auto;
 /*display: block;*/
 /*'Montserrat', sans-serif;
 'Noto Sans', sans-serif;*/
@@ -130,37 +140,74 @@ padding-bottom: 13px;
 CSS FOR MAD LIBS CSS FOR MAD LIBS CSS FOR MAD LIBS CSS FOR MAD LIBS
 */
 #titleHeader{
+/*background-color: white;*/
 background-color: rgb(204,48,125);
-/*height:150px;*/
+/*height:400px;*/
 font-family:'Muli', sans-serif;
 padding-top: 15px;
+/*or margin top*/
+/*height: 225px;*/
+/*width: 800px;*/
+/*display:block;*/
 /*margin-bottom: 20px;*/
+/*position: relative;*/
 }
 
 #titleImage{
-  margin-left: 20px;
+  /*margin-left: 15px;
+  padding-top: 15px;*/
+  /*margin-right:5%;*/
+  position: absolute;
+  margin-top: 17%;
+  margin-left: 27%;
   transition: transform 3s;
+  /*text-align: center;*/
+  /*height:800px;*/
+  /*margin-bottom: 100px;*/
+}
+
+#iPhoneCircle{
+width: 200px;
+height: 200px;
+-webkit-border-radius: 100px;
+-moz-border-radius: 100px;
+border-radius: 100px;
+/*background-color: rgb(204,48,125);*/
+/*background-color: white;*/
+background-color: rgb(234,227,227);
+margin-left: 10%;
+/*position: absolute;*/
+position:relative;
+/*left:10%;*/
+/*text-align: center;*/
+display: inline-block;
+
 }
 
 .spin {
-  transform: rotate(720deg);
+  transform: rotate(1080deg);
 }
-/*1140*/
-/*1080*/
+/*720*/
+/*1440*/
 
-.title{
+/*.title{
   display: inline;
-}
+}*/
 
 #libTitle{
-margin-left: 20px;
+margin-left: 5%;
+/*THIS IS PROBABALY NOT RIGHT MINUS MARGIN*/
+/*margin-top: -150px;*/
 font-size: 60px;
 color: white;
 font-family:'Muli', sans-serif;
-/*margin-bottom: 50px;*/
-/*padding-bottom: 50px;*/
-/*NEED TO FIX THIS FORMATING*/
-/*vertical-align: super;*/
+/*color: rgb(204,48,125);*/
+color: white;
+display: inline;
+/*margin-bottom: 50px;
+padding-bottom: 50px;*/
+/*NEED TO FIX THIS FORMATING
+vertical-align: super;*/
 }
 
 .mad{
@@ -194,6 +241,7 @@ font-family:'Muli', sans-serif;
   line-height: 175%;
   padding-top: 5px;
   padding-bottom: 5px;
+  /*margin-top: 100px;*/
 
 }
 
@@ -218,6 +266,15 @@ section{
   /*width:600px;*/
   /*margin-right: auto;
   margin-left:100px;*/
+  background-color: white;
+  border: 5px solid rgb(204,48,125);
+  margin-left: 100px;
+  width: 675px;
+  /*padding-top: 5px;
+  padding-bottom: 5px;*/
+  padding-left: 15px;
+  padding-left: 15px;
+  border-radius: 20px;
 }
 
 
@@ -238,7 +295,6 @@ main {
   box-sizing: border-box;
   /*REFORMAT TABLE */
   border:5px solid rgb(204,48,125);
-
   float: right;
   width: 400px;
   background-color: rgb(234,227,227);
@@ -249,24 +305,36 @@ main {
 }
 
 .madLibText{
-  width: 700px;
-  margin-left: 100px;
+
+
   /*background-color: rgb(14,116,255);
   color: white;
   border: 20px solid rgb(14,116,255);
   border-radius: 20px;*/
   line-height: 175%;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 10px;
+
+  /*padding-bottom: 5px;*/
+
 }
 .textSec{
-  background-color: rgb(204,48,125);
-  color: white;
+  /*background-color: white;
+  border: 5px solid rgb(204,48,125);
+  margin-left: 100px;*/
+  width: 675px;
+  /*padding-left: 15px;
+  padding-left: 15px;
+  border-radius: 20px;*/
+
 }
 .madLibBubbles{
-  width: 700px;
-  margin-left: 100px;
+  width: 675px;
+  /*margin-top: 100px;
+  margin-bottom: 100px;*/
+  /*NEEDTO FIX THIS CODE*/
+  margin-left: 175px;
   line-height: 175%;
+  /*text-align: center;*/
 
 }
 .finalP{
@@ -282,6 +350,10 @@ font-size: 20px;
   background-color: rgb(234,227,227);
   height: 100px;
 }
+
+/*data-translation {
+
+}*/
 
   button{
     padding: 10px 15px 10px 15px;
@@ -381,6 +453,20 @@ footer{
   background-color: white;
   height:50px;
 }
+
+
+#card{
+  display:inline;
+
+}
+.front {
+  background-color: blue;
+}
+.back{
+  background-color: red;
+
+}
+
     /*flipping between emoji and words
 
 
@@ -388,40 +474,41 @@ footer{
     	perspective: 1000;
     }
     	/* flip the pane when hovered */
-    	.flip-container:hover .flipper, .flip-container.hover .flipper {
+    	/*.flip-container:hover .flipper, .flip-container.hover .flipper {
     		transform: rotateY(180deg);
-    	}
+    	}*/
 
-    .flip-container, .front, .back {
+    /*.flip-container, .front, .back {
     	width: 280px;
     	height: 280px;
     	float: left;
     }
 
     /* flip speed goes here */
-    .flipper {
+    /*.flipper {
     	transition: 0.6s;
     	transform-style: preserve-3d;
     	position: relative;
-    }
+    }*/
 
     /* hide back of pane during swap */
-    .front, .back {
-    	backface-visibility: hidden;
+    /*.front, .back {*/
+    	/*backface-visibility: hidden;
     	position: absolute;
     	top: 0;
     	left: 0;
-    }
+    }*/
 
     /* front pane, placed above back */
-    .front {
+    /*.front {
+      display:inline;
     	z-index: 2;
     	/* for firefox 31 */
-    	transform: rotateY(0deg);
-    }
+    	/*transform: rotateY(0deg);
+    }*/
 
     /* back, initially hidden pane */
-    .back {
+    /*.back {
     	transform: rotateY(180deg);
     }
 
@@ -437,4 +524,4 @@ footer{
     	width: 250px;
     	height: 250px;
     	border-radius: 20px;
-    }
+    }*/

@@ -1,6 +1,7 @@
-
+// $(#card).flip();
 // Spining iPhone animation, starts on refresh
 var titleImage = document.querySelector("#titleImage");
+ console.log(titleImage);
 titleImage.classList.add("spin");
 
   //When we click on anything with class noun show run function showNouns table
