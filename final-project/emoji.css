@@ -428,14 +428,15 @@ button{
   margin-top: 0px;
 }
 
-
-
+/*TO GIVE SPACE AT THE BOTTOM OF THE HOME PAGE*/
 footer{
   background-color: white;
   height:50px;
 }
 
+/*FIPPING BETWEEN EMOJIS AND WORDS*/
 
+/*ATTEMPT AT JEQUERY LIBRARY VERSION*/
 /*#card{
   display:inline;
 
@@ -448,51 +449,69 @@ footer{
 
 }*/
 
-    /*flipping between emoji and words
+/*CSS FLIP ANIMATION*/
+/*front=storyEmoji
+back=data-translation*/
 
-
+/*Perspective give the illusion of 3 dementional space*/
+/*TRIED TO Give ti the class flip container, but its too up
+Need to add this class to with JS??*/
+	/*perspective: 1000;*/
     /*.flip-container {
     	perspective: 1000;
-    }
+    }*/
+
+    /*This needs to be on click of translate; don;t need hover*/
     	/* flip the pane when hovered */
     	/*.flip-container:hover .flipper, .flip-container.hover .flipper {
     		transform: rotateY(180deg);
     	}*/
 
-    /*.flip-container, .front, .back {
-    	width: 280px;
-    	height: 280px;
-    	float: left;
-    }
+/*WILL NEEED TO CORECT THESE height*/
+/*NEeed to write JS to give data-translation a class*/
+  /*.flip-container, .front, .back {
+    /*.flip-container, .storyEmoji, .data-translation{
+    	width: 45px;
+    	height: 45px;
+      /*What is this doing?*/
+    	/*float: left;
+    }*/
 
-    /* flip speed goes here */
-    /*.flipper {
+    /* FLIP SPEED goes here */
+    .flipper {
     	transition: 0.6s;
     	transform-style: preserve-3d;
     	position: relative;
-    }*/
+    }
 
+/*//THIS IS NOT GOING TO WORK ASSUMES STATIC POSTIONING*/
     /* hide back of pane during swap */
-    /*.front, .back {*/
-    	/*backface-visibility: hidden;
+      /*.front, .back {*/
+    /*.storyEmoji, .data-translation {
+    	backface-visibility: hidden;
     	position: absolute;
     	top: 0;
     	left: 0;
     }*/
-
+/*???NEED THIS?*/
     /* front pane, placed above back */
-    /*.front {
+      /*.front {*/
+    /*.storyEmoji {
       display:inline;
     	z-index: 2;
     	/* for firefox 31 */
     	/*transform: rotateY(0deg);
     }*/
 
+/*???NEED THIS?*/
     /* back, initially hidden pane */
-    /*.back {
+    /*.back {*/
+  /*.data-translation {
     	transform: rotateY(180deg);
-    }
+    }*/
 
+/*???NEED THIS?*/
+    /*Flipping horizontally*/
     .reverse 	{
         -moz-transform: scaleX(-1);
         -o-transform: scaleX(-1);
@@ -502,7 +521,8 @@ footer{
         -ms-filter: "FlipH";
     	top:0px;
     	left:0px;
-    	width: 250px;
-    	height: 250px;
-    	border-radius: 20px;
-    }*/
+      /*NOT SURE ABOUT THIS PART What shoudl the wodth do?*/
+    	width: 45px;
+    	height: 45px;
+    	/*border-radius: 20px;*/
+    }

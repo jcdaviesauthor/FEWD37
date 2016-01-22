@@ -45,7 +45,6 @@ titleImage.classList.add("spin");
       //the noun we clicked has no text content, takes any the word noun
       clickedNounEl.textContent = "";
 
-      // $(".noun").addClass("wordOffEmogiOn");
       //then we are appending the new cloned image to the page
       clickedNounEl.appendChild(clonedImg);
       //then we are clearing the table when an emoji is chosen, see function below
@@ -108,94 +107,6 @@ titleImage.classList.add("spin");
           clearTable(tableClicked);
       };
 
-//Create array ("buckets") for nouns
-// var nounArray =
-//   [
-//     {
-//       "path": "images/noun-emoji/noun-cactus.png",
-//       "translation": "cactus"
-//     },
-//
-//     {
-//       "path": "images/noun-emoji/noun-chick.png",
-//       "translation": "chick"
-//     },
-//
-//     {
-//       "path": "images/noun-emoji/noun-monkey.png",
-//       "translation": "monkey"
-//     },
-//
-//     {
-//       "path": "images/noun-emoji/noun-piggy.png",
-//       "translation": "piggy"
-//     },
-//
-//     {
-//       "path": "images/noun-emoji/noun-shit.png",
-//       "translation": "shit"
-//     },
-//
-//   ];
-//
-//   var verbArray =
-//     [
-//       {
-//         "path": "images/verb-emoji/verb-call.png",
-//         "translation": "call"
-//       },
-//
-//       {
-//         "path": "images/verb-emoji/verb-cry.png",
-//         "translation": "cry"
-//       },
-//
-//       {
-//         "path": "images/verb-emoji/verb-hate.png",
-//         "translation": "hate"
-//       },
-//
-//       {
-//         "path": "images/verb-emoji/verb-love.png",
-//         "translation": "love"
-//       },
-//
-//       {
-//         "path": "images/verb-emoji/verb-see.png",
-//         "translation": "see"
-//       },
-//
-//     ];
-//
-//     var adjectiveArray =
-//       [
-//         {
-//           "path": "images/adjective-emoji/adjective-crabby.png",
-//           "translation": "crabby"
-//         },
-//
-//         {
-//           "path": "images/adjective-emoji/adjective-fishy.png",
-//           "translation": "fishy"
-//         },
-//
-//         {
-//           "path": "images/adjective-emoji/adjective-flushed.png",
-//           "translation": "flushed"
-//         },
-//
-//         {
-//           "path": "images/adjective-emoji/adjective-on-fire.png",
-//           "translation": "on fire"
-//         },
-//
-//         {
-//           "path": "images/adjective-emoji/adjective-sad.png",
-//           "translation": "sad"
-//         },
-//
-//       ];
-
 // FOR LOOP to put translation on the page
 // When click on translate button run function to replace ALL emojis
 // var translateBtn = $("button");
@@ -222,16 +133,3 @@ function replaceEmojis() {
   // $("body").append(textPage);
   }
 }
-
-  // var tableClicked = $(imgClicked).parents('table');
-//then for loop
-//
-//     // remove child
-//     var remove child = element.removeChild(".madlib-emoji");
-//     //get translation from data
-//     // set prents text content
-//     span.textContent = nounArray[i].data-translation;
-//     //append to page
-//     span.appendChild(textContent);
-//   }
-// }
