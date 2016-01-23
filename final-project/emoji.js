@@ -25,12 +25,13 @@ titleImage.classList.add("spin");
       // can also use: var $(this) = imgClicked;
 
       // console.log("the emoji you clicked is", imgClicked);
-      // ??? NOT SURE ABOUT THIS ONE
+      // Use to clear all of the emojis of that part of speech, your way to clear only that part of speech
+      //see clearTable below
       var tableClicked = $(imgClicked).parents('table');
       //clone/recreate the image in the spot on Story page to keep it in the table as well
       // NEED TO UPDATE TO JQUERY
       var clonedImg= document.createElement("img");
-      //setting clones attribute to image
+      //setting clones attribute of source to the to image string of the image clicked
       clonedImg.setAttribute("src", imgClicked.getAttribute("src"));
       //setting clones attribute to data-translation
       clonedImg.setAttribute("data-translation", imgClicked.getAttribute("data-translation"))
@@ -45,7 +46,7 @@ titleImage.classList.add("spin");
       //the noun we clicked has no text content, takes any the word noun
       clickedNounEl.textContent = "";
 
-      //then we are appending the new cloned image to the page
+      //then we are appending the new cloned image right below the place that they clciked on the page
       clickedNounEl.appendChild(clonedImg);
       //then we are clearing the table when an emoji is chosen, see function below
       clearTable(tableClicked);
@@ -110,26 +111,37 @@ titleImage.classList.add("spin");
 // FOR LOOP to put translation on the page
 // When click on translate button run function to replace ALL emojis
 // var translateBtn = $("button");
-// Event listener, one click of the "translate" button run the function replaceEmojis
-$("button").on( "click", replaceEmojis);
-
-// translation function
-function replaceEmojis() {
-  //UPDATE TO JQUERY
-  //get parent, by selecting all of the objects with class storyEmoji
-  // ??? NOT SURE WHY YOU WOULD USE ALL VS REGULAR querySelector
-  // ??? NOT SURE about this one
-  var images = document.querySelectorAll(".storyEmoji");
-  //Fun through a for loop with the length of all of the images in teh table
-  for (var i = 0; i < images.length; i++) {
-    //find the image in the array and get is translation attribute
-  var eachEmojiName = images[i].getAttribute("data-translation");
-  console.log(eachEmojiName);
-  // add class emoji off
-  // images[i].style.display.none;
-  // ??? NOT SURE ABOUT THIS ONE
-  var span = images[i].parentNode;
-  span.textContent = eachEmojiName;
-  // $("body").append(textPage);
-  }
-}
+// Event listener, one click of the "translate" button run the function replace emojis
+// Could put a conditional to make them have to answer them all first
+// $("button").on( "click", replaceEmojis);
+//
+// // translation function
+// function replaceEmojis() {
+//   //UPDATE TO JQUERY
+//   //get parent, by selecting all of the objects with class storyEmoji
+//   // ??? NOT SURE WHY YOU WOULD USE ALL VS REGULAR querySelector
+//   // ??? NOT SURE about this one
+//   var images = document.querySelectorAll(".storyEmoji");
+//   //Fun through a for loop with the length of all of the images in teh table
+//   for (var i = 0; i < images.length; i++) {
+//     //find the image in the array and get is translation attribute
+//   var eachEmojiName = images[i].getAttribute("data-translation");
+//   console.log(eachEmojiName);
+//   // add class emoji off
+//   // images[i].style.display.none;
+//   // finding the parent span for each of the Emoji images
+// // This is going to be the container span
+//   var spanContainer = images[i].parentNode;
+//   images[i].setAttribute("class", "front");
+// //create new span
+//   var spanBack = document.createElement("span");
+//   // Taking span giving it text content for right dtatd-translation
+//   spanBack.textContent = eachEmojiName;
+//   // Give span attribue of class back
+//   spanBack.setAttribute("class", "back");
+//   spanContainer.setAttribute("class", "container");
+//   // Append class back to container right under image in html
+//   spanContainer.appendChild(spanBack);
+//
+//   }
+// }
