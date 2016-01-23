@@ -167,35 +167,36 @@ CSS FOR MAD LIBS CSS FOR MAD LIBS CSS FOR MAD LIBS CSS FOR MAD LIBS
 .mad{
   font-size: 18px;
 }
+
 /*DIRECTIONS DIRECTIONS DIRECTIONS DIRECTIONS*/
 #directionsTitle{
   font-family: 'Muli', sans-serif;
-  font-size: 30px;
-}
-
-#directionsUl{
-  list-style-type: none;
-  font-family: 'Muli', sans-serif;
-  margin-left: -25px;
+  font-size: 23px;
 }
 
 #introMonkey{
   display: inline;
-  margin-left: 1000px;
+  margin-left: 1060px;
   position: relative;
-  top:-170px;
+  top:-220px;
 }
 
+/*fixing margins*/
 #monkeyDiv{
-  height: 430px;
+  height: 260px;
+}
+
+.getEmojiOn{
+  font-size: 20px;
+  font-weight: bold;
 }
 
 #monkeyBubbleDirections{
   line-height: 175%;
   margin-top: 20px;
-  width: 750px;
+  width: 825px;
   color: black;
-  border: 20px solid rgb(14,116,255);
+  border: 15px solid rgb(14,116,255);
   position: relative;
   background-color: white;
   border-radius: 20px;
@@ -215,11 +216,11 @@ CSS FOR MAD LIBS CSS FOR MAD LIBS CSS FOR MAD LIBS CSS FOR MAD LIBS
   border-left-color: rgb(14,116,255);
   border-left-width: 40px;
   position: absolute;
-  bottom: 70px;
-  margin-left: 770px;
+  bottom: 120px;
+  margin-left: 850px;
 }
 
-/*Table with Emoji Choices*/
+/*TABLES WITH EMOJI CHOICES*/
 .table{
   display:none;
 }
@@ -230,8 +231,38 @@ CSS FOR MAD LIBS CSS FOR MAD LIBS CSS FOR MAD LIBS CSS FOR MAD LIBS
 main {
   position: relative;
 }
-.emoji {
+.emoji, .front {
   width:45px;
+  /*highest z-index number is the thing on top*/
+  z-index:2;
+  /*gives it a start to animation*/
+  transform: rotateY(0deg);
+}
+
+.front, .back{
+  /*keeps the other side hidden*/
+backface-visibility: hidden;
+/*Keep them from both showing*/
+position: absolute;
+/*????*/
+/*top:0;
+left:0;*/
+}
+/*@keyframes front{
+
+}*/
+.container {
+  transition: 1s;
+  transform-style: preserve-3d;
+  position: relative;
+  perspective: 800px;
+
+
+}
+/*might want to put up*/
+.card{
+transform: rotateY(180deg);
+  postion:absolute;
 }
 
 .tableOn{
@@ -256,7 +287,7 @@ th{
 /*First section of the story*/
 #madLibIntro{
   line-height: 175%;
-  width: 770px;
+  width: 835px;
   color: black;
   border: 20px solid rgb(234,227,227);
   position: relative;
@@ -307,11 +338,12 @@ th{
 }
 
 /*Styles the text of the words befoe the turn to Emojis*/
-.text{
+.text, .back {
   width:20px;
   text-decoration:underline;
   font-weight:bold;
 }
+
 
 .textMessage {
   width: 450px;
@@ -374,7 +406,7 @@ th{
 #madLibConclusion{
   line-height: 175%;
   margin-top: 30px;
-  width: 770px;
+  width: 835px;
   color: black;
   border: 20px solid rgb(234,227,227);
   position: relative;
@@ -469,20 +501,16 @@ Need to add this class to with JS??*/
 
 /*WILL NEEED TO CORECT THESE height*/
 /*NEeed to write JS to give data-translation a class*/
-  /*.flip-container, .front, .back {
-    /*.flip-container, .storyEmoji, .data-translation{
+  /*.flip-container, .front, .back {*/
+    /*.flip-container, .storyEmoji, data-translation{
     	width: 45px;
-    	height: 45px;
+    	height: 45px;*/
       /*What is this doing?*/
     	/*float: left;
-    }*/
+    }
 
     /* FLIP SPEED goes here */
-    .flipper {
-    	transition: 0.6s;
-    	transform-style: preserve-3d;
-    	position: relative;
-    }
+
 
 /*//THIS IS NOT GOING TO WORK ASSUMES STATIC POSTIONING*/
     /* hide back of pane during swap */
