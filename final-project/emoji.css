@@ -118,9 +118,7 @@ body{
   font-family:'Muli', sans-serif;
 }
 
-/*CSS FOR MAD LIBS CSS FOR MAD LIBS CSS FOR MAD LIBS CSS FOR MAD LIBS
-CSS FOR MAD LIBS CSS FOR MAD LIBS CSS FOR MAD LIBS CSS FOR MAD LIBS
-*/
+/*CSS FOR IPHONE BREAKUP CSS FOR IPHONE BREAKUP CSS FOR IPHONE BREAKUP CSS FOR IPHONE BREAKUP CSS FOR IPHONE BREAKUP*/
 
 #titleHeader{
   background-color: rgb(204,48,125);
@@ -231,39 +229,6 @@ CSS FOR MAD LIBS CSS FOR MAD LIBS CSS FOR MAD LIBS CSS FOR MAD LIBS
 main {
   position: relative;
 }
-.emoji, .front {
-  width:45px;
-  /*highest z-index number is the thing on top*/
-  z-index:2;
-  /*gives it a start to animation*/
-  transform: rotateY(0deg);
-}
-
-.front, .back{
-  /*keeps the other side hidden*/
-backface-visibility: hidden;
-/*Keep them from both showing*/
-position: absolute;
-/*????*/
-/*top:0;
-left:0;*/
-}
-/*@keyframes front{
-
-}*/
-.container {
-  transition: 1s;
-  transform-style: preserve-3d;
-  position: relative;
-  perspective: 800px;
-
-
-}
-/*might want to put up*/
-.card{
-transform: rotateY(180deg);
-  postion:absolute;
-}
 
 .tableOn{
   display:block;
@@ -336,14 +301,6 @@ th{
   width: 600px;
   margin-top: -75px;
 }
-
-/*Styles the text of the words befoe the turn to Emojis*/
-.text, .back {
-  width:20px;
-  text-decoration:underline;
-  font-weight:bold;
-}
-
 
 .textMessage {
   width: 450px;
@@ -468,89 +425,48 @@ footer{
 
 /*FIPPING BETWEEN EMOJIS AND WORDS*/
 
-/*ATTEMPT AT JEQUERY LIBRARY VERSION*/
-/*#card{
-  display:inline;
-
+.container {
+  width:60px;
+  height:45px;
+  position: relative;
+  perspective: 800px;
 }
-.front {
-  background-color: blue;
+
+.card{
+  width: 100%;
+  heigh: 100%;
+  postion:absolute;
+  transform-style: preserve-3d;
+  transition:transform 1s;
 }
-.back{
-  background-color: red;
 
-}*/
+.card figure{
+  margin: 0;
+  display: block;
+  position:absolute;
+  width:100%;
+  height:100%;
+  backface-visibility: hidden;
+}
+.emoji, .front {
+  width:45px;
+  /*highest z-index number is the thing on top*/
+  /*z-index:2;
+  /*gives it a start to animation*/
+  /*transform: rotateY(0deg);*/
+}
 
-/*CSS FLIP ANIMATION*/
-/*front=storyEmoji
-back=data-translation*/
+.card, .front{
+  border:5px;
+  border-color: red
+}
 
-/*Perspective give the illusion of 3 dementional space*/
-/*TRIED TO Give ti the class flip container, but its too up
-Need to add this class to with JS??*/
-	/*perspective: 1000;*/
-    /*.flip-container {
-    	perspective: 1000;
-    }*/
-
-    /*This needs to be on click of translate; don;t need hover*/
-    	/* flip the pane when hovered */
-    	/*.flip-container:hover .flipper, .flip-container.hover .flipper {
-    		transform: rotateY(180deg);
-    	}*/
-
-/*WILL NEEED TO CORECT THESE height*/
-/*NEeed to write JS to give data-translation a class*/
-  /*.flip-container, .front, .back {*/
-    /*.flip-container, .storyEmoji, data-translation{
-    	width: 45px;
-    	height: 45px;*/
-      /*What is this doing?*/
-    	/*float: left;
-    }
-
-    /* FLIP SPEED goes here */
-
-
-/*//THIS IS NOT GOING TO WORK ASSUMES STATIC POSTIONING*/
-    /* hide back of pane during swap */
-      /*.front, .back {*/
-    /*.storyEmoji, .data-translation {
-    	backface-visibility: hidden;
-    	position: absolute;
-    	top: 0;
-    	left: 0;
-    }*/
-/*???NEED THIS?*/
-    /* front pane, placed above back */
-      /*.front {*/
-    /*.storyEmoji {
-      display:inline;
-    	z-index: 2;
-    	/* for firefox 31 */
-    	/*transform: rotateY(0deg);
-    }*/
-
-/*???NEED THIS?*/
-    /* back, initially hidden pane */
-    /*.back {*/
-  /*.data-translation {
-    	transform: rotateY(180deg);
-    }*/
-
-/*???NEED THIS?*/
-    /*Flipping horizontally*/
-    .reverse 	{
-        -moz-transform: scaleX(-1);
-        -o-transform: scaleX(-1);
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
-        filter: FlipH;
-        -ms-filter: "FlipH";
-    	top:0px;
-    	left:0px;
-      /*NOT SURE ABOUT THIS PART What shoudl the wodth do?*/
-    	width: 45px;
-    	height: 45px;
-    	/*border-radius: 20px;*/
-    }
+/*Styles the text of the words befoe the turn to Emojis*/
+.text, .back {
+  width:20px;
+  text-decoration:underline;
+  font-weight:bold;
+  border:5px;
+  border-color: blue;
+  transform: rotateY(180);
+}
