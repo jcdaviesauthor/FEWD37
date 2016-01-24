@@ -1,52 +1,44 @@
-// $(#card).flip();
+
 // Spining iPhone animation, starts on refresh
 var titleImage = document.querySelector("#titleImage");
- console.log(titleImage);
 titleImage.classList.add("spin");
 
-  //When we click on anything with class noun show run function showNouns table
-  var nounEvent = $(".noun");
-  $(".noun").on( "click", showNouns);
+//When we click on anything with class noun show run function showNouns table
+var nounEvent = $(".noun");
+$(".noun").on( "click", showNouns);
 
-  //Changing class of table from display none to displayed
-  var clickedNounEl;
-  function showNouns (event){
-    $(".noun-table").addClass("tableOn");
+//Changing class of table from display none to displayed
+var clickedNounEl;
+
+function showNouns (event){
+  $(".noun-table").addClass("tableOn");
   //keeping track of where in the story you clicked on
-    clickedNounEl = event.target;
-    console.log (clickedNounEl);
+  clickedNounEl = event.target;
   };
   //When click on nouns inside the table run function chooseNouns
   $(".nounImg").on( "click", chooseNouns);
 
   function chooseNouns(nounEvent){
       //keeping track of what emoji they clicked on
-      var imgClicked = nounEvent.target;
       // can also use: var $(this) = imgClicked;
-
-      // console.log("the emoji you clicked is", imgClicked);
-      // Use to clear all of the emojis of that part of speech, your way to clear only that part of speech
+      var imgClicked = nounEvent.target;
+      // Use to clear all of the emojis of that part of speech, the way to clear only that part of speech
       //see clearTable below
       var tableClicked = $(imgClicked).parents('table');
-      //clone/recreate the image in the spot on Story page to keep it in the table as well
+      //clone/recreate the image in the spot on story page to keep it in the table as well
       // NEED TO UPDATE TO JQUERY
       var clonedImg= document.createElement("img");
-      //setting clones attribute of source to the to image string of the image clicked
+      //setting clones attribute of source to the image string of the image clicked
       clonedImg.setAttribute("src", imgClicked.getAttribute("src"));
       //setting clones attribute to data-translation
       clonedImg.setAttribute("data-translation", imgClicked.getAttribute("data-translation"))
 
-      //RESIZING EMOJI-setting clones classes so they will format coreectly with other emojis
+      //Resizing: setting clones classes so they will format coreectly with other emojis
       clonedImg.setAttribute("class", "emoji storyEmoji");
-      // clonedImg.setAttribute("class", "storyEmoji");
-
-      // Need these to get the data translation
-      // clonedImg.setAttribute("data-translation", imgClicked.getAttribute("data-translation"));
-      // clonedImg.setAttribute('class', 'madlib-emoji');
-      //the noun we clicked has no text content, takes any the word noun
+      //the noun we clicked has no text content, takes away the word noun
       clickedNounEl.textContent = "";
 
-      //then we are appending the new cloned image right below the place that they clciked on the page
+      //then we are appending the new cloned image right below the place that they clicked on the page
       clickedNounEl.appendChild(clonedImg);
       //then we are clearing the table when an emoji is chosen, see function below
       clearTable(tableClicked);
@@ -82,7 +74,7 @@ titleImage.classList.add("spin");
         clearTable(tableClicked);
     };
 
-    //add ADJECTIVES
+    //ADJECTIVES
     var adjectiveEvent = $(".adjective");
     $(".adjective").on( "click", showAdjective);
 
@@ -108,7 +100,7 @@ titleImage.classList.add("spin");
           clearTable(tableClicked);
       };
 
-// FOR LOOP to put translation on the page
+// For loop to put translation on the page
 // When click on translate button run function to replace ALL emojis
 // Could put a conditional to make them have to answer them all first
 $("button").on( "click", replaceEmojis);
@@ -125,8 +117,12 @@ function replaceEmojis() {
   // finding the parent span for each of the Emoji images
 // This is going to be the container span
   var spanContainer = images[i].parentNode;
+
   images[i].setAttribute("class", "front");
 //create new span
+//tried to remobe emoji image
+// var removeEmoji = document.getElementsByClassName("emoji");
+// emoji.parentNode.removeChild(emoji)
   var spanBack = document.createElement("span");
   // Taking span giving it text content for right dtatd-translation
   spanBack.textContent = eachEmojiName;
