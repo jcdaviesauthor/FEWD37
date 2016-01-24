@@ -307,45 +307,8 @@ th{
   width:115px;
 }
 
-/*Brittney image and bubbles*/
-#clubBubbleBrittney1{
-  margin-left: 150px;
-  margin-top: -135px;
-}
 
-#brittneyImage1{
-  margin-left: 300px;
-  margin-top: -45px;
-}
-#clubBubbleBrittney2{
-  margin-left: 150px;
-}
 
-#brittneyImage2{
-  margin-left: 920px;
-  margin-top:-100px;
-}
-
-/*Tiffany Image and Bubbles*/
-
-#tiffanyImage1{
-  margin-left: 900px;
-  margin-top: 0px;
-}
-#clubBubbleTiffany1{
-  margin-left: 600px;
-  margin-top: -135px;
-}
-
-#tiffanyImage2{
-  margin-left: 150px;
-  margin-top: 0px;
-}
-
-#clubBubbleTiffany2{
-  margin-left: 300px;
-  margin-top: -60px;
-}
 
 
 /*//Brittney at the club*/
@@ -372,11 +335,28 @@ th{
   border-left-width: 15px;
   position: absolute;
   bottom: -90px;
-  margin-left: 190px;
+  margin-left: -235px;
 }
 
+/*Brittney image and bubbles*/
+#clubBubbleBrittney1{
+  margin-left: 150px;
+}
 
-/*Bubble at the top*/
+#brittneyImage1{
+  margin-left: 200px;
+  margin-top: -45px;
+}
+#clubBubbleBrittney2{
+  margin-left: 150px;
+}
+
+#brittneyImage2{
+  margin-left: 200px;
+  margin-top:-45px;
+}
+/*blue bubble at the top*/
+
 .clubTiffany{
   background-color: rgb(14,116,255);
   border: 20px solid rgb(14,116,255);
@@ -385,12 +365,34 @@ th{
 /*triangle at bottom*/
 .clubTiffany::before {
   border: 40px solid rgb(14,116,255);
-  border-top-color: rgb(204,48,125);
+  border-top-color: rgb(14,116,255);
   border-right-color: transparent;
   border-bottom-color: transparent;
   border-left-color: transparent;
   border-right-width: 15px;
   border-left-width: 15px;
+  /*margin-left: -900px;*/
+  margin-right: 200px;
+}
+
+/*Tiffany Image and Bubbles*/
+
+#clubBubbleTiffany1{
+  margin-left: 535px;
+  margin-top: -100px;
+}
+#tiffanyImage1{
+  margin-left: 850px;
+  margin-top: -40px;
+}
+#clubBubbleTiffany2{
+  margin-left: 535px;
+  margin-top: -100px;
+}
+
+#tiffanyImage2{
+  margin-left: 850px;
+  margin-top: 0px;
 }
 
 .libsLink{
