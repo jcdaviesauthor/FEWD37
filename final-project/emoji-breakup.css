@@ -344,87 +344,21 @@ footer{
   height:50px;
 }
 
-/*.emoji, .front {
-    width:45px;  /*highest z-index number is the thing on top*/
-    /*z-index:2;*/
-    /*gives it a start to animation*/
-    /*transform: rotateY(0deg);
- }*/
-/*
- .front, .back{
-  /*keeps the other side hidden*/
- /*backface-visibility: hidden;*/
- /*Keep them from both showing*/
- /*position: absolute;
- }*/
- /*@keyframes front{
-
- }*/
- /*.container {
-   transition: 1s;
-   transform-style: preserve-3d;
-   position: relative;
-   perspective: 800px;
-
- }*/
- /*might want to put up*/
- /*.card{
- transform: rotateY(180deg);
- postion:absolute;*/
-
- /*.text, .back{
-   width:20px;
-   text-decoration: underline;
-   font-weight: bold;
- }*/
-
-
-/*FIPPING BETWEEN EMOJIS AND WORDS*/
-/*FROM MONKEY-LIKE WEBSITE*/
+/*USED WEBSITE JAS SENT*/
 .emoji {
   width:45px;
 }
-/*.container{
-  perspective:1000;
 
-}
-.container, .front, .back{
-width:45px;
-height: 45px;
-}*/
-/*flip speed*/
-/*.card{
-  transition: 1s;
-  transform-style: perserve-3d;
-  position: relative;
-
-}
-.front, .back{
-  backface-visibility: hidden;
-  position: absolute;
-  top:0;
-  left:0;
-}
-
-.front{
-  z-index:2;
-  transform: rotateY(0deg);
-}
-
-.back{
-  transform: rotateY(180deg);
-}*/
 
 .hide{
   display:none:
 }
 
-/*USED WEBSITE JAS SENT*/
 /*Container houses the 3D space*/
 /*parent of card*/
 .container {
-  /*width:50px;
-  height:50px;*/
+  /*width:100px;
+  height:100px;*/
   position: relative;
   perspective: 800px;
 }
@@ -437,7 +371,6 @@ height: 45px;
   position:absolute;
   transform-style: preserve-3d;
   transition:transform 1s;
-
 }
 
 /*THIS WAS SUPPOSED TO BE FIGURE WHICH DOESN'T WORK TRIED TO REPLACE WITH ANOTHER CLASS IN THE SPAN, BUT THAT DIDNWRK EITHER*/
@@ -448,7 +381,7 @@ height: 45px;
   width:100%;
   height:100%;
   backface-visibility: hidden;
-  transform: rotateY(180deg);
+  transform:rotateY(180deg);
   /*min-width: 100px;
     min-height: 100px;*/
 }
