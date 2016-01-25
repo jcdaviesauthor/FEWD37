@@ -111,6 +111,7 @@ function replaceEmojis() {
   //get parent, by selecting all of the objects with class storyEmoji
   var images = document.querySelectorAll(".storyEmoji");
   //Fun through a for loop with the length of all of the images in teh table
+
   for (var i = 0; i < images.length; i++) {
     //find the image in the array and get is translation attribute
   var eachEmojiName = images[i].getAttribute("data-translation");
@@ -134,3 +135,26 @@ function replaceEmojis() {
 
   }
 }
+
+// ATTEMPTS TO REMOVE PHOTOS
+
+// Hide parts of speech
+  // $(".pos").addClass("hide");
+
+
+// function removeElement(img) {
+//     images[i].parentNode.removeChild(img);
+// }
+// removeElement(document.getElementsByClassName(storyEmoji));
+
+// function removeEmojiImg{
+//
+//   var images = document.querySelectorAll(".storyEmoji");
+//
+//   for( i = 0; i < images.length; i++ ) {
+//     image = new Image();
+//     image.src = images[i];
+//     image.onload = function(){alert('Test');};
+//     image = null;
+//   }
+// }

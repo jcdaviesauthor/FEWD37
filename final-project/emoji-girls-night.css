@@ -303,13 +303,9 @@ th{
   line-height: 175%;
 }
 
-.brittneyImage, .tiffanyImage{
+.girlsImageSize{
   width:115px;
 }
-
-
-
-
 
 /*//Brittney at the club*/
 .club {
@@ -339,31 +335,36 @@ th{
 }
 
 /*Brittney image and bubbles*/
-#clubBubbleBrittney1{
+.clubBubbleBrittneyPosition{
   margin-left: 150px;
 }
 
-#brittneyImage1{
+.brittneyImagePostion{
   margin-left: 200px;
   margin-top: -45px;
 }
-#clubBubbleBrittney2{
-  margin-left: 150px;
+
+#clubBubble2{
+  margin-top: -200px;
 }
 
-#brittneyImage2{
-  margin-left: 200px;
-  margin-top:-45px;
-}
 /*blue bubble at the top*/
 
 .clubTiffany{
-  background-color: rgb(14,116,255);
-  border: 20px solid rgb(14,116,255);
+  width: 450px;
   color: white;
+  border: 20px solid rgb(14,116,255);
+  position: relative;
+  background-color: rgb(14,116,255);
+  margin-bottom: 50px;
+  border-radius: 20px;
 }
+
 /*triangle at bottom*/
 .clubTiffany::before {
+  content: "";
+  width: 0px;
+  height: 0px;
   border: 40px solid rgb(14,116,255);
   border-top-color: rgb(14,116,255);
   border-right-color: transparent;
@@ -371,33 +372,36 @@ th{
   border-left-color: transparent;
   border-right-width: 15px;
   border-left-width: 15px;
-  /*margin-left: -900px;*/
-  margin-right: 200px;
+  position: absolute;
+  bottom: -90px;
+  margin-left: 425px;
 }
 
 /*Tiffany Image and Bubbles*/
 
-#clubBubbleTiffany1{
+.clubBubbleTiffanyPostion{
   margin-left: 535px;
   margin-top: -100px;
 }
-#tiffanyImage1{
-  margin-left: 850px;
+.tiffanyImagePosition{
+  margin-left: 870px;
   margin-top: -40px;
-}
-#clubBubbleTiffany2{
-  margin-left: 535px;
-  margin-top: -100px;
-}
-
-#tiffanyImage2{
-  margin-left: 850px;
-  margin-top: 0px;
 }
 
 .libsLink{
   color:rgb(14,116,255);
   text-decoration: underline;
+}
+
+#firstSetGirlBub{
+  padding-top: -50px;
+}
+
+#monoStoryBub3{
+  margin-top: -35px;
+  margin-left: 75px;
+  margin-bottom: 10px;
+  height: 100px;
 }
 
 #finalP{
@@ -423,7 +427,7 @@ button{
   border:none !important;
   box-shadow:none !important;
   font-family: 'Muli', sans-serif;
-  margin-left: 540px;
+  margin-left: 537px;
   margin-top: 0px;
 }
 

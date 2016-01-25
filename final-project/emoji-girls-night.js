@@ -109,28 +109,19 @@ $("button").on( "click", replaceEmojis);
 function replaceEmojis() {
   //UPDATE TO JQUERY
   //get parent, by selecting all of the objects with class storyEmoji
+  // ??? NOT SURE WHY YOU WOULD USE ALL VS REGULAR querySelector
+  // ??? NOT SURE about this one
   var images = document.querySelectorAll(".storyEmoji");
   //Fun through a for loop with the length of all of the images in teh table
   for (var i = 0; i < images.length; i++) {
     //find the image in the array and get is translation attribute
   var eachEmojiName = images[i].getAttribute("data-translation");
-  // finding the parent span for each of the Emoji images
-// This is going to be the container span
-  var spanContainer = images[i].parentNode;
-
-  images[i].setAttribute("class", "front");
-//create new span
-//tried to remobe emoji image
-// var removeEmoji = document.getElementsByClassName("emoji");
-// emoji.parentNode.removeChild(emoji)
-  var spanBack = document.createElement("span");
-  // Taking span giving it text content for right dtatd-translation
-  spanBack.textContent = eachEmojiName;
-  // Give span attribue of class back
-  spanBack.setAttribute("class", "back");
-  spanContainer.setAttribute("class", "card");
-  // Append class back to container right under image in html
-  spanContainer.appendChild(spanBack);
-
+  console.log(eachEmojiName);
+  // add class emoji off
+  // images[i].style.display.none;
+  // ??? NOT SURE ABOUT THIS ONE
+  var span = images[i].parentNode;
+  span.textContent = eachEmojiName;
+  // $("body").append(textPage);
   }
 }
