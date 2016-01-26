@@ -35,8 +35,7 @@ body{
   margin-right: 50px;
 }
 
-/*CSS FOR IPHONE BREAKUP CSS FOR IPHONE BREAKUP CSS FOR IPHONE BREAKUP CSS FOR IPHONE BREAKUP CSS FOR IPHONE BREAKUP*/
-
+/*CSS FOR IPHONE BREAKUP CSS FOR IPHONE BREAKUP CSS FOR*/
 #titleHeader{
   background-color: rgb(204,48,125);
   font-family:'Muli', sans-serif;
@@ -152,12 +151,12 @@ main {
   box-sizing: border-box;
   border:5px solid rgb(204,48,125);
   float: right;
-  width: 275px;
+  width: 175px;
   background-color: white;
   border-radius: 6px;
   position: fixed;
   top:200px;
-  left:77.8%;
+  left:83%;
 }
 
 th{
@@ -344,11 +343,10 @@ footer{
   height:50px;
 }
 
-/*USED WEBSITE JAS SENT*/
+/*FLIP ANNIMATION*/
 .emoji {
   width:45px;
 }
-
 
 .hide{
   display:none:
@@ -357,38 +355,20 @@ footer{
 /*Container houses the 3D space*/
 /*parent of card*/
 .container {
-  /*width:100px;
-  height:100px;*/
   position: relative;
   perspective: 800px;
 }
 /*A wrapper for the 3D object*/
-/*100% makes ure it turns from the center*/
 /*child of container*/
 .card {
-  width: 100%;
-  height: 100%;
-  position:absolute;
   transform-style: preserve-3d;
   transition:transform 1s;
 }
 
-/*THIS WAS SUPPOSED TO BE FIGURE WHICH DOESN'T WORK TRIED TO REPLACE WITH ANOTHER CLASS IN THE SPAN, BUT THAT DIDNWRK EITHER*/
 .card, .front, .back{
-  margin: 0;
-  display: block;
-  position:absolute;
-  width:100%;
-  height:100%;
   backface-visibility: hidden;
   transform:rotateY(180deg);
-  /*min-width: 100px;
-    min-height: 100px;*/
 }
-/*textarea{
-  box-sizing: border-box;
-  width: 100%
-}*/
 
 /*Styles the text of the words before the turn to Emojis*/
 .text, .back {
@@ -398,7 +378,10 @@ footer{
   border:5px;
   border-color: blue;
 }
-/*not sure about where the filipped comes in*/
-/*.card.flipped{
-  transform:rotateY(180deg);
+
+/*may want to use for other animation*/
+/*.explode {
+  transform: scale(5.0);
+  transition: all 2s;
+  opacity: 0.0;
 }*/

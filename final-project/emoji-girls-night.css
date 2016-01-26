@@ -163,12 +163,12 @@ main {
   box-sizing: border-box;
   border:5px solid rgb(204,48,125);
   float: right;
-  width: 275px;
+  width: 175px;
   background-color: white;
   border-radius: 6px;
   position: fixed;
   top:200px;
-  left:77.8%;
+  left:86%;
 }
 
 th{
@@ -318,7 +318,7 @@ th{
   border-radius: 20px;
 }
 /*triangle at bottom*/
-.club ::before {
+.club::before {
   content: "";
   width: 0px;
   height: 0px;
@@ -331,7 +331,6 @@ th{
   border-left-width: 15px;
   position: absolute;
   bottom: -90px;
-  margin-left: -235px;
 }
 
 /*Brittney image and bubbles*/

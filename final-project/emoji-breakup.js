@@ -14,6 +14,7 @@ function showNouns (event){
   $(".noun-table").addClass("tableOn");
   //keeping track of where in the story you clicked on
   clickedNounEl = event.target;
+
   };
   //When click on nouns inside the table run function chooseNouns
   $(".nounImg").on( "click", chooseNouns);
@@ -43,6 +44,7 @@ function showNouns (event){
       //then we are clearing the table when an emoji is chosen, see function below
       clearTable(tableClicked);
   };
+
 //removed class tableOn (for all parts of speech)to hide each table after emoji is chosen
   function clearTable(displayedTable){
       displayedTable.removeClass("tableOn");
@@ -84,7 +86,7 @@ function showNouns (event){
         clickedAdjectiveEl = event.target;
       };
 
-      $(".adjectiveImg").on( "click", chooseAdjective);
+      $(".adjectiveImg").on("click", chooseAdjective);
       function chooseAdjective(adjectiveEvent){
           var imgAdjectivesClicked = adjectiveEvent.target
           console.log (imgAdjectivesClicked);
@@ -102,7 +104,6 @@ function showNouns (event){
 
 // For loop to put translation on the page
 // When click on translate button run function to replace ALL emojis
-// Could put a conditional to make them have to answer them all first
 $("button").on( "click", replaceEmojis);
 
 // translation function
@@ -119,42 +120,22 @@ function replaceEmojis() {
 // This is going to be the container span
   var spanContainer = images[i].parentNode;
 
-  images[i].setAttribute("class", "front");
-//create new span
-//tried to remobe emoji image
-// var removeEmoji = document.getElementsByClassName("emoji");
-// emoji.parentNode.removeChild(emoji)
-  var spanBack = document.createElement("span");
-  // Taking span giving it text content for right dtatd-translation
-  spanBack.textContent = eachEmojiName;
-  // Give span attribue of class back
-  spanBack.setAttribute("class", "back");
-  spanContainer.setAttribute("class", "card");
-  // Append class back to container right under image in html
-  spanContainer.appendChild(spanBack);
+// Removes Images
+  $(images[i]).hide();
 
+//If has class back then remove
+  if (spanContainer.querySelector(".back") == undefined) {
+    var spanBack = document.createElement("span");
+    // Taking span giving it text content for right dtatd-translation
+    spanBack.textContent = eachEmojiName;
+    // Give span attribue of class back
+    spanBack.setAttribute("class", "back");
+    // Give span attribue of class card
+    spanContainer.setAttribute("class", "card");
+    // Append class back to container right under image in html
+    spanContainer.appendChild(spanBack);
+    //see below: could use to translate another animation
+    // spanContainer.querySelector("img").classList.add("explode")
+  }
   }
 }
-
-// ATTEMPTS TO REMOVE PHOTOS
-
-// Hide parts of speech
-  // $(".pos").addClass("hide");
-
-
-// function removeElement(img) {
-//     images[i].parentNode.removeChild(img);
-// }
-// removeElement(document.getElementsByClassName(storyEmoji));
-
-// function removeEmojiImg{
-//
-//   var images = document.querySelectorAll(".storyEmoji");
-//
-//   for( i = 0; i < images.length; i++ ) {
-//     image = new Image();
-//     image.src = images[i];
-//     image.onload = function(){alert('Test');};
-//     image = null;
-//   }
-// }

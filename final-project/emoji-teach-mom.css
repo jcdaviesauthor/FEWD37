@@ -57,10 +57,6 @@ body{
   -moz-border-radius: 100px;
   border-radius: 100px;
   background-color: rgb(234,227,227);
-/*rgb(234,227,227);*/
-/*rgb(14,116,255); blue*/
-
-
   margin-left: 10%;
   position:relative;
   display: inline-block;
@@ -84,6 +80,8 @@ body{
 /*Font size for all fo the mad libs*/
 .mad{
   font-size: 18px;
+  line-height: 175%
+
 }
 
 .emoji{
@@ -123,7 +121,7 @@ body{
   line-height: 175%;
   margin-top: 20px;
   width: 825px;
-  color: black;
+  color: rgb(43,43,43);
   border: 15px solid rgb(234,227,227);
   position: relative;
   background-color: white;
@@ -165,12 +163,12 @@ main {
   box-sizing: border-box;
   border:5px solid rgb(204,48,125);
   float: right;
-  width: 275px;
+  width: 175px;
   background-color: white;
   border-radius: 6px;
   position: fixed;
   top:200px;
-  left:77.8%;
+  left:86%;
 }
 
 th{
@@ -183,7 +181,7 @@ th{
 .monkeyBubbles{
   line-height: 175%;
   width: 835px;
-  color: black;
+  color: rgb(43,43,43);
   border: 20px solid rgb(234,227,227);
   position: relative;
   background-color:rgb(234,227,227);
@@ -226,37 +224,20 @@ th{
   line-height: 175%;
 }
 
-#monoStoryBub2{
-  margin-top: -35px;
-  margin-left: 75px;
-  margin-bottom: 10px;
-  height: 100px;
-}
-
-/*At the Club section*/
-#atTheCluuub{
-  background color:rgb(234,227,227);
-}
-.bubbles{
+.monkeyBubbles2{
   line-height: 175%;
-}
-
-.girlsImageSize{
-  width:115px;
-}
-
-/*//Brittney at the club*/
-.club {
-  width: 450px;
-  color: black;
+  width: 550px;
+  color: rgb(43,43,43);
   border: 20px solid rgb(234,227,227);
   position: relative;
-  background-color: rgb(234,227,227);
+  background-color:rgb(234,227,227);
   margin-bottom: 50px;
+  margin-top:-120px;
   border-radius: 20px;
+  margin-left: 150px;
 }
-/*triangle at bottom*/
-.club ::before {
+/*triangle at bottom of monkey bubble*/
+.monkeyBubbles2::before {
   content: "";
   width: 0px;
   height: 0px;
@@ -269,37 +250,43 @@ th{
   border-left-width: 15px;
   position: absolute;
   bottom: -90px;
-  margin-left: -235px;
+  margin-left: 0px;
 }
 
-/*Brittney image and bubbles*/
-.clubBubbleBrittneyPosition{
-  margin-left: 150px;
+#monoStoryBub2{
+  margin-top: -35px;
+  margin-left: 75px;
+  margin-bottom: 0px;
+  height: 100px;
 }
 
-.brittneyImagePostion{
-  margin-left: 200px;
-  margin-top: -45px;
+/*At Moms section*/
+#atMoms{
+  background-color: rgb(31,224,100);
+  /*margin-top: 20px;*/
+  padding-top: 20px;
+  padding-bottom:20px;
+}
+.bubbles{
+  line-height: 175%;
 }
 
-#clubBubble2{
-  margin-top: -200px;
+.girlsImageSize{
+  width:115px;
 }
 
-/*blue bubble at the top*/
-
-.clubTiffany{
-  width: 450px;
+.brittneybeforeMoms{
+  width: 550px;
   color: white;
   border: 20px solid rgb(14,116,255);
   position: relative;
   background-color: rgb(14,116,255);
   margin-bottom: 50px;
   border-radius: 20px;
-}
 
+}
 /*triangle at bottom*/
-.clubTiffany::before {
+.brittneybeforeMoms::before{
   content: "";
   width: 0px;
   height: 0px;
@@ -312,16 +299,103 @@ th{
   border-left-width: 15px;
   position: absolute;
   bottom: -90px;
-  margin-left: 425px;
+  margin-left:520px;
+}
+.beforeMomsBubbleBrittneyPosition{
+  margin-left: 435px;
+  margin-top: -100px;
+}
+
+.beforeMomsbrittneyImagePostion{
+  margin-left: 870px;
+  margin-top: -30px;
+}
+
+
+/*//Brittney at moms*/
+.brittneyAtMoms{
+  width: 550px;
+  color: white;
+  border: 20px solid rgb(14,116,255);
+  position: relative;
+  background-color: rgb(14,116,255);
+  margin-bottom: 50px;
+  border-radius: 20px;
+}
+/*triangle at bottom*/
+.brittneyAtMoms::before{
+  content: "";
+  width: 0px;
+  height: 0px;
+  border: 40px solid rgb(14,116,255);
+  border-top-color: rgb(14,116,255);
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-right-width: 15px;
+  border-left-width: 15px;
+  position: absolute;
+  bottom: -90px;
+  margin-left: 0px;
+}
+
+/*Brittney image and bubbles*/
+.momsBubbleBrittneyPosition{
+  margin-left: 150px;
+}
+
+.momsBubbleBrittneyPositionFinal{
+  margin-left: 150px;
+  margin-top:-100px;
+}
+.brittneyImagePostion{
+  margin-left: 200px;
+  margin-top: -35px;
+}
+
+#brittneyMomBubs{
+  margin-top: -100px;
+}
+
+/*Moms*/
+.momsBubble{
+  width: 550px;
+  color: rgb(43,43,43);
+  border: 20px solid rgb(234,227,227);
+  position: relative;
+  background-color: rgb(234,227,227);
+  margin-bottom: 50px;
+  border-radius: 20px;
+}
+/*rgb(234,227,227);*/
+
+/*triangle at bottom*/
+.momsBubble::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border: 40px solid rgb(234,227,227);
+  border-top-color: rgb(234,227,227);
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-right-width: 15px;
+  border-left-width: 15px;
+  position: absolute;
+  bottom: -90px;
+  margin-left: 520px;
 }
 
 /*Tiffany Image and Bubbles*/
 
-.clubBubbleTiffanyPostion{
-  margin-left: 535px;
+.momsBubblePosition{
+  margin-left: 435px;
+}
+.momsBubblePositionFinal{
+  margin-left: 435px;
   margin-top: -100px;
 }
-.tiffanyImagePosition{
+.momsImagePosition{
   margin-left: 870px;
   margin-top: -40px;
 }
@@ -331,9 +405,9 @@ th{
   text-decoration: underline;
 }
 
-#firstSetGirlBub{
+/*#firstSetGirlBub{
   padding-top: -50px;
-}
+}*/
 
 #monoStoryBub3{
   margin-top: -35px;
@@ -365,7 +439,7 @@ button{
   border:none !important;
   box-shadow:none !important;
   font-family: 'Muli', sans-serif;
-  margin-left: 537px;
+  margin-left: 495px;
   margin-top: 0px;
 }
 
@@ -375,8 +449,10 @@ footer{
   height:50px;
 }
 
-
-
+.ur{
+  width: 30px;
+  margin-bottom: 5px;
+}
 .front {
     width:45px;  /*highest z-index number is the thing on top*/
     z-index:2;
