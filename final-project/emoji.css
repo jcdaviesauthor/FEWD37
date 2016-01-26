@@ -8,20 +8,13 @@ body{
   float: right;
   font-family: 'Muli', sans-serif;
   font-size: 16px;
-}
-
-.clearFix:before, .clearFix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
+  /*position:relative;*/
 }
 
 .homeBarli{
   text-decoration: none;
   display: inline;
+
 }
 
 #homeHome{
@@ -35,6 +28,16 @@ body{
 #devHome{
   margin-right: 50px;
 }
+
+.clearFix:before, .clearFix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
 /*//BUNNY SECTION, TOP HALF OF HOME PAGE.*/
 
 .homeH1{
