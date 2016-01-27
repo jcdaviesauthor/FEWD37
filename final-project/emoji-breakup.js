@@ -38,9 +38,27 @@ function showNouns (event){
       clonedImg.setAttribute("class", "emoji storyEmoji");
       //the noun we clicked has no text content, takes away the word noun
       clickedNounEl.textContent = "";
-
       //then we are appending the new cloned image right below the place that they clicked on the page
       clickedNounEl.appendChild(clonedImg);
+
+      var parent = $(clonedImg).parent();
+      if ($(clonedImg).parent().get(0).tagName==="IMG") {
+        var grandParent = $(clonedImg).parents("SPAN");
+        console.log("this is cnew parent", grandParent);
+        // $(grandParent).append(clonedImg);
+        $(parent).replaceWith(clonedImg);
+        };
+
+      if ($(clonedImg).parent().get(0).id==='noun1') {
+        $("#noun1").clone().appendTo("#nounA");
+        console.log($("#nounA").text());
+        $("#wordNounA").remove();
+      }
+      if ($(clonedImg).parent().get(0).id==='noun2') {
+        $("#noun2").clone().appendTo("#nounB");
+        $("#wordNounB").remove();
+      }
+
       //then we are clearing the table when an emoji is chosen, see function below
       clearTable(tableClicked);
   };
@@ -73,6 +91,13 @@ function showNouns (event){
         clonedVerbImg.setAttribute('class', 'emoji storyEmoji');
         clickedVerbEl.textContent = "";
         clickedVerbEl.appendChild(clonedVerbImg);
+
+        var parent = $(clonedVerbImg).parent();
+        if ($(clonedVerbImg).parent().get(0).tagName==="IMG") {
+        var grandParent = $(clonedVerbImg).parents("SPAN");
+        console.log("this is cnew parent", grandParent);
+        $(parent).replaceWith(clonedVerbImg);
+    };
         clearTable(tableClicked);
     };
 
@@ -99,6 +124,14 @@ function showNouns (event){
           clonedAdjectiveImg.setAttribute("class", "emoji storyEmoji");
           clickedAdjectiveEl.textContent = "";
           clickedAdjectiveEl.appendChild(clonedAdjectiveImg);
+
+          var parent = $(clonedAdjectiveImg).parent();
+      if ($(clonedAdjectiveImg).parent().get(0).tagName==="IMG") {
+        var grandParent = $(clonedAdjectiveImg).parents("SPAN");
+        console.log("this is cnew parent", grandParent);
+        $(parent).replaceWith(clonedAdjectiveImg);
+        };
+
           clearTable(tableClicked);
       };
 
@@ -124,6 +157,7 @@ function replaceEmojis() {
   $(images[i]).hide();
 
 //If has class back then remove
+// We are going to put back to the card only if it doesnt already have a back
   if (spanContainer.querySelector(".back") == undefined) {
     var spanBack = document.createElement("span");
     // Taking span giving it text content for right dtatd-translation

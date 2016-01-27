@@ -40,6 +40,15 @@ function showNouns (event){
 
       //then we are appending the new cloned image right below the place that they clicked on the page
       clickedNounEl.appendChild(clonedImg);
+
+      var parent = $(clonedImg).parent();
+            if ($(clonedImg).parent().get(0).tagName==="IMG") {
+              var grandParent = $(clonedImg).parents("SPAN");
+              console.log("this is cnew parent", grandParent);
+              // $(grandParent).append(clonedImg);
+              $(parent).replaceWith(clonedImg);
+              };
+
       //then we are clearing the table when an emoji is chosen, see function below
       clearTable(tableClicked);
   };
@@ -71,6 +80,15 @@ function showNouns (event){
         clonedVerbImg.setAttribute('class', 'emoji storyEmoji');
         clickedVerbEl.textContent = "";
         clickedVerbEl.appendChild(clonedVerbImg);
+
+        var parent = $(clonedVerbImg).parent();
+              if ($(clonedVerbImg).parent().get(0).tagName==="IMG") {
+              var grandParent = $(clonedVerbImg).parents("SPAN");
+              console.log("this is cnew parent", grandParent);
+              $(parent).replaceWith(clonedVerbImg);
+          };
+
+
         clearTable(tableClicked);
     };
 
@@ -97,6 +115,14 @@ function showNouns (event){
           clonedAdjectiveImg.setAttribute("class", "emoji storyEmoji");
           clickedAdjectiveEl.textContent = "";
           clickedAdjectiveEl.appendChild(clonedAdjectiveImg);
+
+          var parent = $(clonedAdjectiveImg).parent();
+          if ($(clonedAdjectiveImg).parent().get(0).tagName==="IMG") {
+            var grandParent = $(clonedAdjectiveImg).parents("SPAN");
+            console.log("this is cnew parent", grandParent);
+            $(parent).replaceWith(clonedAdjectiveImg);
+            };
+
           clearTable(tableClicked);
       };
 
