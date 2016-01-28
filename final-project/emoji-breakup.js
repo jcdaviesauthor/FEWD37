@@ -41,6 +41,7 @@ function showNouns (event){
       //then we are appending the new cloned image right below the place that they clicked on the page
       clickedNounEl.appendChild(clonedImg);
 
+//This allows you to pick more than one emoji
       var parent = $(clonedImg).parent();
       if ($(clonedImg).parent().get(0).tagName==="IMG") {
         var grandParent = $(clonedImg).parents("SPAN");
@@ -49,6 +50,7 @@ function showNouns (event){
         $(parent).replaceWith(clonedImg);
         };
 
+// Adding duplicate images in linked space
       if ($(clonedImg).parent().get(0).id==='noun1') {
         $("#noun1").clone().appendTo("#nounA");
         console.log($("#nounA").text());
@@ -126,11 +128,12 @@ function showNouns (event){
           clickedAdjectiveEl.appendChild(clonedAdjectiveImg);
 
           var parent = $(clonedAdjectiveImg).parent();
-      if ($(clonedAdjectiveImg).parent().get(0).tagName==="IMG") {
-        var grandParent = $(clonedAdjectiveImg).parents("SPAN");
-        console.log("this is cnew parent", grandParent);
-        $(parent).replaceWith(clonedAdjectiveImg);
-        };
+
+          if ($(clonedAdjectiveImg).parent().get(0).tagName==="IMG") {
+            var grandParent = $(clonedAdjectiveImg).parents("SPAN");
+            console.log("this is cnew parent", grandParent);
+            $(parent).replaceWith(clonedAdjectiveImg);
+            };
 
           clearTable(tableClicked);
       };
@@ -156,7 +159,6 @@ function replaceEmojis() {
 // Removes Images
   $(images[i]).hide();
 
-//If has class back then remove
 // We are going to put back to the card only if it doesnt already have a back
   if (spanContainer.querySelector(".back") == undefined) {
     var spanBack = document.createElement("span");

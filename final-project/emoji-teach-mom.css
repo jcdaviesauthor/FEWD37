@@ -163,12 +163,12 @@ main {
   box-sizing: border-box;
   border:5px solid rgb(204,48,125);
   float: right;
-  width: 175px;
+  width: 160px;
   background-color: white;
   border-radius: 6px;
   position: fixed;
   top:200px;
-  left:86%;
+  left:83%;
 }
 
 th{
