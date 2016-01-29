@@ -151,7 +151,7 @@ main {
   box-sizing: border-box;
   border:5px solid rgb(204,48,125);
   float: right;
-  width: 150px;
+  width: 160px;
   background-color: white;
   border-radius: 6px;
   position: fixed;
