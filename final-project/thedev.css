@@ -75,10 +75,16 @@ body{
 
 }
 
-#deets{
-  display:inline;
+ul{
+  list-style-type: none;
 }
-#phone{
+
+.deetsLi{
+  display: inline;
+
+}
+
+.deetsImg{
   width: 30px;
 }
 
