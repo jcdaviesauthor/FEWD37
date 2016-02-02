@@ -46,6 +46,7 @@ body{
   font-weight:bold;
   margin-top: 5px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 #bunnySection {
@@ -53,10 +54,10 @@ body{
   margin-bottom: 30px;
 }
 
-#homeBunny{
-  margin-left:10%;
+#homeHourGlass{
+  margin-left:20%;
   position: absolute;
-  margin-top: 15px;
+  margin-top: 20%;
 }
 
 #bunnyCircle {
@@ -67,17 +68,21 @@ body{
   border-radius: 100px;
   background-color: rgb(204,48,125);
   position:relative;
-  left:40%;
+  left:42%;
 }
 
-#madLibSection{
+#historySection{
   background-color: rgb(234,227,227);
-  height: 400px;
+  padding-bottom: 50px;
+}
+.historyText{
+  margin-left:54px;
+  margin-right: 35px;
+  /*text-align: center;*/
 
 }
-#madLibComponents{
-  width: 730px;
-  margin: auto;
+#hiero{
+  text-align: center;
 }
 
 .homeH2{
@@ -85,7 +90,7 @@ body{
   font-family: 'Muli', sans-serif;
   text-align: center;
   padding-top: 30px;
-  padding-bottom: 13px;
+  padding-bottom: 7px;
 }
 
 .madLibBoxes{
