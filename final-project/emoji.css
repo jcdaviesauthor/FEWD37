@@ -2,12 +2,13 @@
 body{
   margin:0%;
   font-family: 'Muli', sans-serif;
+  color: rgb(57,57,57);
 }
 /*NAV NAV NAV NAV NAV NAV */
 #navHome{
   float: right;
   font-family: 'Muli', sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   /*position:relative;*/
 }
 

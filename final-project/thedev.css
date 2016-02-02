@@ -1,0 +1,140 @@
+/*EMOJI HOME PAGE*/
+body{
+  margin:0%;
+  font-family: 'Muli', sans-serif;
+  color: rgb(57,57,57);
+}
+/*#topColor{
+  color: rgb(204,48,125);
+}*/
+/*genesisSection: TOP HALF OF ABOUT PAGE.*/
+
+.homeH1{
+  color: rgb(204,48,125);
+  font-family:'Muli', sans-serif;
+  font-weight:bold;
+  margin-top: 0px;
+  margin-bottom: 20px;
+
+}
+
+#devSection {
+  display: block;
+  margin-bottom: 30px;
+}
+
+
+#turkey{
+  margin-left:20%;
+  position: absolute;
+  margin-top: 20%;
+}
+
+#devCircle {
+  width: 200px;
+  height: 200px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  background-color: rgb(234,227,227);
+  position:relative;
+  left:42%;
+}
+
+#bioSection{
+  background-color: rgb(204,48,125);
+  padding-bottom: 20px;
+  color: white;
+  text-align: center;
+}
+
+.devText{
+  line-height:175%
+}
+
+#devPort{
+  margin-top: 20px;
+  padding-bottom: 30px;
+  color: rgb(57,57,57);
+}
+.homeH2{
+  color: white;
+  font-family: 'Muli', sans-serif;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 7px;
+}
+
+.homeH2B{
+    color: rgb(57,57,57);
+    text-align: center;
+  }
+
+#unicorn{
+  width: 50px;
+
+}
+
+#deets{
+  display:inline;
+}
+#phone{
+  width: 30px;
+}
+
+#websiteLink{
+  color: white !important;
+}
+
+
+td a{
+    text-decoration: none !important;
+      color: rgb(204,48,125) !important;
+}
+
+th{
+  text-align: left;
+}
+
+td{
+  padding-right: 40px;
+}
+#hwTable{
+  margin-left: 430px;
+}
+
+#softDiv{
+background-color: rgb(234,227,227);
+padding-top: 20px;
+padding-bottom: 20px;
+}
+#swTable{
+  margin-left: 430px;
+
+}
+.software{
+  width: 30px;
+}
+
+#space{
+background-color: white;
+padding-top: 30px;
+padding-bottom: 30px;
+}
+
+button{
+  padding: 10px 15px 10px 15px;
+  background-color: rgb(204,48,125);
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  bottom: 100px
+  left: 300px
+  color:transparent !important;
+  text-shadow:none !important;
+  border:none !important;
+  box-shadow:none !important;
+  margin-left: 500px;
+}

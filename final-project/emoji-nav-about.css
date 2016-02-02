@@ -2,43 +2,10 @@
 body{
   margin:0%;
   font-family: 'Muli', sans-serif;
-}
-/*NAV NAV NAV NAV NAV NAV */
-#navHome{
-  float: right;
-  font-family: 'Muli', sans-serif;
-  font-size: 16px;
-  /*position:relative;*/
+  color: rgb(57,57,57);
 }
 
-.homeBarli{
-  text-decoration: none;
-  display: inline;
-
-}
-
-#homeHome{
-  margin-right:50px;
-
-}
-#aboutHome{
-  margin-right:50px;
-}
-
-#devHome{
-  margin-right: 50px;
-}
-
-.clearFix:before, .clearFix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
-}
-
-/*//BUNNY SECTION, TOP HALF OF HOME PAGE.*/
+/*genesisSection: TOP HALF OF ABOUT PAGE.*/
 
 .homeH1{
   color: rgb(204,48,125);
@@ -49,7 +16,7 @@ body{
   text-align: center;
 }
 
-#bunnySection {
+#genesisSection {
   display: block;
   margin-bottom: 30px;
 }
@@ -60,7 +27,7 @@ body{
   margin-top: 20%;
 }
 
-#bunnyCircle {
+#hourGlassCircle {
   width: 200px;
   height: 200px;
   -webkit-border-radius: 100px;
@@ -73,7 +40,7 @@ body{
 
 #historySection{
   background-color: rgb(234,227,227);
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 .historyText{
   margin-left:54px;
@@ -85,6 +52,12 @@ body{
   text-align: center;
 }
 
+
+#testimonials{
+  margin-top: -20px;
+  padding-bottom: 30px;
+  color: rgb(57,57,57);
+}
 .homeH2{
   color: rgb(57,57,57);
   font-family: 'Muli', sans-serif;
@@ -93,40 +66,51 @@ body{
   padding-bottom: 7px;
 }
 
-.madLibBoxes{
-  display: inline-block;
+#quoteAndText{
+display: inline;
+}
+
+#quote{
+  width: 40px;
+  margin-left: 270px;
+  margin-top: -100px;
+}
+
+#testimonialText{
+  text-align: center;
+  width:600px;
   margin: auto;
-  postion: absolute;
-  padding-left: 30px;
-  padding-right: 30px;
+  margin-top: -20px;
+
+}
+#testimonialsPeople{
+  margin-top: 100px:
+  padding-top:100px:
 }
 
-.square{
-  width: 175px;
-  height: 175px;
-  background-color: rgb(204,48,125);
-  text-align: center;
-}
-
-.square img {
-  padding-top: 20px;
-}
-/*HELP with this formating need to move photos down*/
-/*.square .standardImg{
-  padding-top: 30px !important;
-}*/
-/*
-.impAndScreamImg{
-  margin-top:-50px;
-
-}*/
-
-.rec {
-  width: 175px;
-  height: 35px;
-  background-color: white;
-  color: rgb(57,57,57);
+#testimonialsPeople{
   text-align: center;
   padding-top: 20px;
-  font-family:'Muli', sans-serif;
+}
+
+.peopleImg{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#brittneyDiv{
+  margin-left:-105px;
+}
+
+.brittney{
+text-align: center;
+}
+
+#brittneyStudent{
+color: rgb(204,48,125);
+}
+
+#brittneyWellington{
+  font-size: 12px;
+  margin-top: -10px;
 }
