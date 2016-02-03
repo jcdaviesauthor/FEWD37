@@ -22,7 +22,6 @@ function formSubmitted(event) {
 }
 
 function resultsReceived(results) {
-  // Try putting a debugger here and inspecting the results argument
   // debugger;
   // The array of movies lives inside results["Search"]
   // See the sampleResult above for an example
@@ -35,23 +34,25 @@ for (var i = 0; i < results.Search.length;i++) {
       console.log(Poster);
       img.setAttribute ("src", Poster);
 
-      var li = document.createElement("li")
-      li.textContent = results.Search[i].Title;
       var li2 = document.createElement("li")
       li2.textContent = results.Search[i].Year;
+      var li = document.createElement("li")
+      li.textContent = results.Search[i].Title;
+
       ul.appendChild(div);
       div.appendChild(img);
-      div.appendChild(li);
       div.appendChild(li2);
+      div.appendChild(li);
+
 
   }
-  // ul.reset();
+  // #movies.reset();
 }
 
 //Need to reset the fields
 
 // function resetField(){
 //   console.log("this reset works");
-//   stopLightRed.classList.delete("stopLightOff");
+  // stopLightRed.classList.delete("stopLightOff");
 // }
 // $('#movie-search-form')[0].reset();
