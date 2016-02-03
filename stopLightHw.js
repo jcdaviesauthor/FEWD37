@@ -37,18 +37,18 @@ function resetTurnGrey (){
 
 
 //caution function
-function fButtonCaution (event) {
-console.log("this Caution works");
-resetTurnGrey();
-//toggle function here?
-stopLightYellow.setInterval(toggleSlow, 1000);
-stopLightCaution.classList.remove("stopLightOff");
-}
-
-function toggleSlow (){
-  stopLightYellow.classList.add("stopLightOff");
-
-}
+// function fButtonCaution (event) {
+// console.log("this Caution works");
+// resetTurnGrey();
+// //toggle function here?
+// stopLightYellow.setInterval(toggleSlow, 1000);
+// stopLightCaution.classList.remove("stopLightOff");
+// }
+//
+// function toggleSlow (){
+//   stopLightYellow.classList.add("stopLightOff");
+//
+// }
 
 function fButtonGo (event) {
 console.log("this works");
