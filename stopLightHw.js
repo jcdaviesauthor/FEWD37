@@ -3,12 +3,12 @@
 var buttonStop= document.querySelector(".buttonStop");
 var buttonSlow= document.querySelector(".buttonSlow");
 var buttonGo= document.querySelector(".buttonGo");
-var buttonCaution= document.querySelector(".buttonCaution");
+// var buttonCaution= document.querySelector(".buttonCaution");
 
 buttonStop.addEventListener ("click", fButtonStop);
 buttonSlow.addEventListener ("click", fButtonSlow);
 buttonGo.addEventListener ("click", fButtonGo);
-buttonCaution.addEventListener ("click", fButtonCaution);
+// buttonCaution.addEventListener ("click", fButtonCaution);
 
 var stopLightRed= document.querySelector(".circleTopOn");
 var stopLightYellow= document.querySelector(".circleMiddleOn");
@@ -18,7 +18,6 @@ function fButtonStop (event) {
 console.log("this works red");
 resetTurnGrey();
 // reset func here
-// document.getElementById("myForm").reset();
 stopLightRed.classList.remove("stopLightOff");
 }
 
@@ -28,13 +27,13 @@ resetTurnGrey();
 // reset func here
 stopLightYellow.classList.remove("stopLightOff");
 }
+
 function resetTurnGrey (){
   console.log("this reset to grey works");
   stopLightRed.classList.add("stopLightOff");
   stopLightYellow.classList.add("stopLightOff");
   stopLightGreen.classList.add("stopLightOff");
 }
-
 
 //caution function
 // function fButtonCaution (event) {
