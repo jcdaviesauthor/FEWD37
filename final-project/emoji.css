@@ -4,43 +4,8 @@ body{
   font-family: 'Muli', sans-serif;
   color: rgb(57,57,57);
 }
-/*NAV NAV NAV NAV NAV NAV */
-#navHome{
-  float: right;
-  font-family: 'Muli', sans-serif;
-  font-size: 15px;
-  /*position:relative;*/
-}
-
-.homeBarli{
-  text-decoration: none;
-  display: inline;
-
-}
-
-#homeHome{
-  margin-right:50px;
-
-}
-#aboutHome{
-  margin-right:50px;
-}
-
-#devHome{
-  margin-right: 50px;
-}
-
-.clearFix:before, .clearFix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
-}
 
 /*//BUNNY SECTION, TOP HALF OF HOME PAGE.*/
-
 .homeH1{
   color: rgb(204,48,125);
   font-family:'Muli', sans-serif;

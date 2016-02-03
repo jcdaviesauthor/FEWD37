@@ -3,37 +3,13 @@ body{
   font-family: 'Muli', sans-serif;
 }
 /*NAV NAV NAV NAV NAV NAV */
+li a{
+    text-decoration: none !important;
+    color:white !important;
+  }
 #navHome{
-  float: right;
-  font-family: 'Muli', sans-serif;
-  font-size: 16px;
-}
-
-.clearFix:before, .clearFix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
-}
-
-.homeBarli{
-  text-decoration: none;
-  display: inline;
-}
-
-#homeHome{
-  margin-right:50px;
-
-}
-#aboutHome{
-  margin-right:50px;
-}
-
-#devHome{
-  margin-right: 50px;
-}
+    font-size: 16px;
+  }
 
 /*CSS FOR IPHONE BREAKUP CSS FOR IPHONE BREAKUP CSS FOR IPHONE BREAKUP CSS FOR IPHONE BREAKUP CSS FOR IPHONE BREAKUP*/
 
