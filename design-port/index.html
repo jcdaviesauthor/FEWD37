@@ -6,63 +6,81 @@
     <link  rel="stylesheet" href="home.css" media="screen" charset="utf-8">
       <link  rel="stylesheet" href="nav.css" media="screen" charset="utf-8">
   </head>
-  <body>
-<header>
+<body>
+  
+  <header>
 
-    <nav id = "navHome">
-        <ul>
-          <li class="homeBarli" id= "resumeHome"><a href="emoji-nav-about.html">Resume</a></li>
-          <li class="homeBarli" id= "aboutHome"><a href="about.html">About</a></li>
-        </ul>
-      </nav>
+      <nav id = "navHome">
+          <ul id="navUl">
+            <li class="homeBarli" id= "resumeHome"><a href="emoji-nav-about.html">Resume</a></li>
+            <li class="homeBarli" id= "aboutHome"><a href="about.html">About</a></li>
+          </ul>
+        </nav>
 
       <div class="clearFix"></div>
 
-</header>
+  </header>
+  <img id="jdLogo" alt="Designers Logo" src="images/home/jd-logo.png">
 
-<main>
-  <div id="rotatingText"
-    <div class="text">
-      <p>Jessica is a </p>
-      <p>
-        <span class="word wisteria">UX Designer.</span>
-        <span class="word belize">Business Strategist.</span>
-        <span class="word pomegranate">Health Care SME.</span>
-        <span class="word green">Front End Developer.</span>
-        <span class="word midnight">Skydiver.</span>
-      </p>
-    </div>
-  </div>
-<section>
-  <div id="portComponents1">
-
-    <div class= "portBoxes">
-      <div class= "square light" ><img id="octo" alt="Tier 5 Octopus Logo" src="images/home/tier5-hula-right.png" ></div>
+  <main>
+    <div id="rotatingText">
+      <div class="text">
+        <p id="jessP">Jessica is a </p>
+        <p>
+          <span class="word mountain">UX Designer.</span>
+          <span class="word sunset">Business Strategist.</span>
+          <span class="word mountain">Health Care SME.</span>
+          <span class="word sunset">Front End Developer.</span>
+          <span class="word charcol">Skydiver.</span>
+        </p>
+      </div>
     </div>
 
-    <div class= "portBoxes">
-      <div id="square1" class= "square dark"><img alt="Web MD" src="images/home/webmd-logo.png" width="300"></div>
+  <section id="cardSection">
+    <div id="portComponents1">
+
+      <div class= "portBoxes right top">
+        <div class= "square light"></div>
+  <!-- <img id="octo" alt="Tier 5 Octopus Logo" src="images/home/tier5-hula-right.png"> -->
+
+      </div>
+
+      <div class= "portBoxes top">
+        <div id="square1" class= "square dark"></div>
+        <!-- <img alt="Web MD" src="images/home/webmd-logo.png" width="300"> -->
+      </div>
     </div>
-  </div>
 
-  <div id="portComponents2">
+    <div id="portComponents2">
 
-    <div class= "portBoxes">
-      <div class= "square dark" ><img class="oct" alt="Beauty Cures Logo" src="images/home/bc-logo.png" width="300"></div>
+      <div class= "portBoxes right">
+        <div class= "square dark"></div>
+        <!-- <img class="oct" alt="Beauty Cures Logo" src="images/home/bc-logo.png"> width="300"> -->
+      </div>
+
+      <div class= "portBoxes">
+
+        <div class= "square light"></div>
+        <!-- <img alt="Bunny Emoji" src="images/home/bunny.png" width="200"> -->
+      </div>
     </div>
+  </section>
+  </main>
 
-    <div class= "portBoxes">
+  <div style="clear: both"></div>
 
-      <div class= "square light"><img alt="Bunny Emoji" src="images/home/bunny.png" width="200"></div>
-    </div>
-  </div>
-</section>
-</main>
+  <footer>
+        <ul id="footerUl">
+          <li class="footerLi"><a href="mailto:thejessicadavies@gmail.com">thejessicadavies@gmail.com</a></li>
+          <li class="footerLi footerLogos"><img class="footerLogos" alt="Linked in Logo" src="images/home/linked-in.png"></li>
+          <li class="footerLi"><img class="footerLogos" alt="Git Hub Logo" src="images/home/git.png"></li>
+          <li class="footerLi liRight">2016 Jessica Davies.</li>
+          <li class="footerLi liRight"><img id="crImg"alt="Copyright Symbol" src="images/home/copyright.png"></li>
+          <li class="footerLi liRight">Web design, content, and code</li>
 
-<footer>
+        </ul>
 
-</footer>
-<script src="home.js"></script>
+        <script src="home.js"></script>
 
   </body>
 </html>

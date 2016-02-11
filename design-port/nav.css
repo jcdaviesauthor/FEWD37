@@ -1,10 +1,16 @@
 /*NAV NAV NAV NAV NAV NAV */
+/*nav{
+  height: 50px;
+}*/
 #navHome{
   float: right;
   /*font-family: 'Muli', sans-serif;*/
-  font-size: 15px;
-  /*color: rgb(93,104,106);*/
+  font-size: 18px;
   /*margin-bottom: -25px;*/
+}
+#navUl{
+  text-decoration: none !important;
+  padding-top:10px;
 }
 
 .homeBarli{
