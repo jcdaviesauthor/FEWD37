@@ -12,6 +12,8 @@ body{
   font-family: 'Muli', sans-serif;
   color: rgb(57,57,57);
 }
+
+
 header{
   background-color: rgba(207,208,203, 0.3);
 }
@@ -151,17 +153,50 @@ margin-bottom: 20px;
   background-color: rgb(119,140,147);
 }
 
+#buttonDiv{
+  text-align: center;
+}
+
+ #devButton{
+  padding: 10px 15px 10px 15px;
+  background-color: rgb(118,140,147);
+  color: rgb(236,233,226);
+  border-radius: 6px;
+  /*border: 4px solid rgb(236,233,226);*/
+  text-decoration: none;
+  font-size: 26px;
+  display:inline-block;
+  text-shadow:none !important;
+  border:none !important;
+  box-shadow:none !important;
+  margin-top:50px;
+}
+
+#wrapper{
+  min-height: 100%;
+  position: relative;
+}
+
+#content{
+  padding-bottom: 100px;
+}
+
+#footer{
+  width:100%;
+  height:100px;
+  position:absolute;
+  bottom:0;
+  left:0;
+
+}
 footer{
+  margin-top:65px;
   background-color: rgba(207,208,203, 0.5);
   /*height:50px;*/
-  margin-top:70px;
-  /*position:absolute;*/
-  /*bottom:0;*/
-
 }
 
 #footerUl{
-padding-top: 50px;
+padding-top: 30px;
 padding-bottom: 20px;
 font-size:16px;
 padding-right: 30px;
