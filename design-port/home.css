@@ -28,30 +28,14 @@ header{
 /*THE ROLLING TITLE*/
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:600);
 
-/*body {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 40px;
-}*/
-/*#rotatingText{
-/*margin:auto;
-}*/
 
-
-.text {
+.textParent{
   /*position: absolute;*/
   width: 220px;
   /*left: 50%;*/
   /*margin: 0 auto;*/
   margin-left: 32%
-  /*height: 40px;
-  top: 50%;*/
-  /*margin-top: -20px;*/
-  /*text-align: center;*/
-}
 
-#jessP{
-  color: rgb(74,74, 74);
 }
 
 p{
@@ -59,7 +43,14 @@ p{
   display: inline-block;
   vertical-align: top;
   /*margin: 0;*/
+  /*position: absolute;*/
 }
+
+#jessP{
+  color: rgb(74,74, 74);
+}
+
+
 
 .word {
   position: absolute;
@@ -102,7 +93,6 @@ p{
   color: rgb(74, 74, 74);
 }
 
-
 /*//CARDS CENTER OF HOME PAGE.*/
 
 #cardSection{
@@ -116,11 +106,9 @@ text-align: center;
 
 .portBoxes{
   display: inline-block;
-  /*margin: auto;
-  postion: absolute;*/
-  /*padding-left: 30px;
-  padding-right: 30px;*/
 }
+
+
 .right{
   margin-right:20px;
 }
@@ -133,16 +121,60 @@ margin-bottom: 20px;
 .square{
   width: 300px;
   height: 300px;
-  /*text-align: center;*/
 }
 
-/*#square1{
+
+#octoBox{
+  position: relative;
   z-index: 0;
-}*/
+}
 
 #octo{
-    width: 300px;
-    /*z-index: 1;*/
+    position: absolute;
+    width: 275px;
+    z-index: 1;
+    left:5%;
+    top:12%;
+}
+
+#webMd{
+    position: absolute;
+    width: 275px;
+    z-index: 1;
+    left:4%;
+    top:37%;
+}
+
+#webBox{
+  position: relative;
+  z-index: 0;
+}
+
+#beauty{
+    position: absolute;
+    width: 275px;
+    z-index: 1;
+    left:4%;
+    top:23%;
+}
+
+#beautyBox{
+  position: relative;
+  z-index: 0;
+}
+
+
+#bunnyBox{
+  position: relative;
+  z-index: 0;
+}
+#bunnyEmoji{
+  position: absolute;
+  width: 200px;
+  z-index: 1;
+  left:17%;
+  top:17%;
+
 }
 
 .light{
@@ -160,16 +192,19 @@ margin-bottom: 20px;
  #devButton{
   padding: 10px 15px 10px 15px;
   background-color: rgb(118,140,147);
-  color: rgb(236,233,226);
   border-radius: 6px;
-  /*border: 4px solid rgb(236,233,226);*/
-  text-decoration: none;
   font-size: 26px;
   display:inline-block;
   text-shadow:none !important;
   border:none !important;
   box-shadow:none !important;
   margin-top:50px;
+  margin-bottom:50px;
+}
+
+button a{
+    text-decoration: none !important;
+    color: rgb(236,233,226) !important;
 }
 
 #wrapper{
@@ -181,23 +216,18 @@ margin-bottom: 20px;
   padding-bottom: 100px;
 }
 
-#footer{
+footer{
+  /*margin-top:65px;*/
+  background-color: rgba(207,208,203, 0.5);
   width:100%;
   height:100px;
   position:absolute;
   bottom:0;
   left:0;
-
-}
-footer{
-  margin-top:65px;
-  background-color: rgba(207,208,203, 0.5);
-  /*height:50px;*/
 }
 
 #footerUl{
 padding-top: 30px;
-padding-bottom: 20px;
 font-size:16px;
 padding-right: 30px;
 

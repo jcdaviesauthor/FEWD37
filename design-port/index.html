@@ -23,13 +23,13 @@
 
   <div id="content">
     <div id="rotatingText">
-      <div class="text">
+      <div class="textParent">
         <p id="jessP">Jessica is a </p>
         <p>
-          <span class="word mountain">UX Designer.</span>
-          <span class="word sunset">Business Strategist.</span>
-          <span class="word mountain">Health CareSME.</span>
-          <span class="word sunset">Front End Developer.</span>
+          <span class="word mountain">Business Strategist.</span>
+          <span class="word sunset">UX Designer.</span>
+          <span class="word mountain">Front End Developer.</span>
+          <span class="word sunset">Health Care SME.</span>
           <span class="word charcol">Skydiver.</span>
         </p>
       </div>
@@ -38,30 +38,35 @@
     <section id="cardSection">
       <div id="portComponents1">
 
-        <div class= "portBoxes right top">
+        <div id="octoBox" class= "portBoxes right top">
           <div class= "square light"></div>
-    <!-- <img id="octo" alt="Tier 5 Octopus Logo" src="images/home/tier5-hula-right.png"> -->
+          <img id="octo" alt="Tier 5 Octopus Logo" src="images/home/tier5-hula-right.png">
 
         </div>
 
-        <div class= "portBoxes top">
+        <div id="webBox" class= "portBoxes top">
           <div id="square1" class= "square dark"></div>
-          <!-- <img alt="Web MD" src="images/home/webmd-logo.png" width="300"> -->
+          <img id="webMd"alt="Web MD" src="images/home/webmd-logo.png" width="300">
         </div>
+
+
       </div>
 
       <div id="portComponents2">
 
-        <div class= "portBoxes right">
+        <div id="beautyBox" class= "portBoxes right">
           <div class= "square dark"></div>
-          <!-- <img class="oct" alt="Beauty Cures Logo" src="images/home/bc-logo.png"> width="300"> -->
+          <img id="beauty" alt="Beauty Cures Logo" src="images/home/bc-logo.png">
         </div>
 
-        <div class= "portBoxes">
+        <div id="bunnyBox"class= "portBoxes">
 
           <div class= "square light"></div>
-          <!-- <img alt="Bunny Emoji" src="images/home/bunny.png" width="200"> -->
+          <img id="bunnyEmoji" alt="Bunny Emoji" src="images/home/bunny.png">
+
         </div>
+
+
       </div>
     </section>
 
@@ -69,22 +74,20 @@
       <button id="devButton" type="button">Dev Portfolio</button>
     </div> -->
     <div id="buttonDiv">
-      <button  id="devButton" type="button">Dev Portfolio</button>
+      <button  id="devButton" type="button"><a href="../index.html">Dev Portfolio</a></button>
     </div>
 
     <!-- <div style="clear: both"></div> -->
   </div>
 
-  <div id="footer">
     <footer>
           <ul id="footerUl">
             <li class="footerLi"><a href="mailto:thejessicadavies@gmail.com">thejessicadavies@gmail.com</a></li>
-            <li class="footerLi footerLogos"><img class="footerLogos" alt="Linked in Logo" src="images/home/linked-in.png"></li>
-            <li class="footerLi"><img class="footerLogos" alt="Git Hub Logo" src="images/home/git.png"></li>
+            <li class="footerLi footerLogos"><a href="https://www.linkedin.com/in/jessica-davies-cfa-46009b13"><img class="footerLogos" alt="Linked in Logo" src="images/home/linked-in.png"></a></li>
+            <li class="footerLi"><a href="https://github.com/jcdaviesauthor/FEWD37/tree/gh-pages"><img class="footerLogos" alt="Git Hub Logo" src="images/home/git.png"></a></li>
             <li class="footerLi liRight">Web design, content, and code&nbsp;<img id="crImg"alt="Copyright Symbol" src="images/home/copyright.png">&nbsp;2016 Jessica Davies.</li>
           </ul>
-
-      </div>
+    </footer>
       <script src="home.js"></script>
         <!-- wrapper end tag -->
   </div>

@@ -57,6 +57,7 @@ body{
 .madLibBoxes{
   display: inline-block;
   margin: auto;
+  /*TYPO*/
   postion: absolute;
   padding-left: 30px;
   padding-right: 30px;
