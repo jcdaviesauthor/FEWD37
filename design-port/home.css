@@ -27,8 +27,7 @@ header{
 
 
 /*THE ROLLING TITLE*/
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:600);
-
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans:600);*/
 
 .textParent{
   /*position: absolute;*/
@@ -50,8 +49,6 @@ p{
 #jessP{
   color: rgb(74,74, 74);
 }
-
-
 
 .word {
   position: absolute;
@@ -144,6 +141,7 @@ p{
 
 .back{
   transform: rotateY(180deg);
+  /*padding: 7%;*/
 }
 
 /*//CARDS CENTER OF HOME PAGE.*/
@@ -161,7 +159,7 @@ padding: top:5%;
 
 .companyTitle{
   font-size: 35px;
-  /*margin-left: -30%;
+  margin-left: -7%;
   /*text-align: left !important;*/
   /*padding-right:45%;*/
 }
@@ -170,10 +168,29 @@ padding: top:5%;
   width: 30px;
 }
 
+#iconTier{
+  padding-left:45%;
+}
+
+#iconWebMd{
+  padding-left:20%;
+}
+
+#iconBeauty{
+  padding-left:20%;
+}
+
+
+/*.iconPeople{
+  width:55px;
+  padding-left:2%;
+  padding-right:20%;
+}*/
+
 .projectDes{
   font-size: 18px;
-  padding-left:5%;
-  padding-right:5%;
+  padding-left:7%;
+  padding-right:7%;
 }
 
 .darkText{
@@ -189,26 +206,29 @@ color: rgb(236,233,226);
     color:inherit;
 }
 
-.lightButton{
+.projectBack{
+  padding-left:7%:
+}
+
+.backButton{
   padding: 10px 15px 10px 15px;
-  background-color: rgb(236,233,226);
-  color:rgb(60,89,104)!important;
   border-radius: 6px;
   font-size: 18px;
   text-shadow:none !important;
   border:none !important;
   box-shadow:none !important;
-
+  text-align: left !important;
+  margin-left: 7%;
 }
+.lightButton{
+  background-color: rgb(236,233,226);
+  color:rgb(60,89,104)!important;
+}
+
 .darkButton{
   padding: 10px 15px 10px 15px;
   background-color: rgb(118,140,147)!important;
   color:rgb(236,233,226) !important;
-  border-radius: 6px;
-  font-size: 18px;
-  text-shadow:none !important;
-  border:none !important;
-  box-shadow:none !important;
 
 }
 /*.containerLeft{
