@@ -149,23 +149,21 @@ p{
 /*//CARDS CENTER OF HOME PAGE.*/
 #cardSection{
 text-align: center;
+/*width:600;
+margin: 0 auto;*/
 }
-
-/*.portComponents1{
-    width: 730px;
-    margin: auto;
-}*/
-
-/*.portBoxes{
-  display: inline-block;
-}*/
 
 .liInline{
 display:inline;
+padding: top:5%;
+  /*text-align: left !important;*/
 }
 
 .companyTitle{
-  font-size: 40px;
+  font-size: 35px;
+  /*margin-left: -30%;
+  /*text-align: left !important;*/
+  /*padding-right:45%;*/
 }
 
 .icon{
@@ -174,8 +172,17 @@ display:inline;
 
 .projectDes{
   font-size: 18px;
+  padding-left:5%;
+  padding-right:5%;
 }
 
+.darkText{
+  color:rgb(60,89,104);
+}
+
+.lightText{
+color: rgb(236,233,226);
+}
 
  a{
     text-decoration: none !important;
@@ -204,9 +211,8 @@ display:inline;
   box-shadow:none !important;
 
 }
-
 /*.containerLeft{
-padding-right: 10%;
+margin-left: 20%;
 }*/
 
 
