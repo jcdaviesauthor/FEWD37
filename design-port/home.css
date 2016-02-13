@@ -100,6 +100,7 @@ p{
 
 #section1{
   display:block;
+  padding-bottom: 2%;
 }
 
 #section2{
@@ -175,34 +176,39 @@ display:inline;
   font-size: 18px;
 }
 
+
+ a{
+    text-decoration: none !important;
+    color:inherit;
+}
+
 .lightButton{
   padding: 10px 15px 10px 15px;
-  background-color: rgb(207,208,203);
+  background-color: rgb(236,233,226);
+  color:rgb(60,89,104)!important;
   border-radius: 6px;
   font-size: 18px;
   text-shadow:none !important;
   border:none !important;
   box-shadow:none !important;
-  color:rgb(118,140,147);
+
 }
 .darkButton{
   padding: 10px 15px 10px 15px;
-  background-color: rgb(118,140,147);
+  background-color: rgb(118,140,147)!important;
+  color:rgb(236,233,226) !important;
   border-radius: 6px;
   font-size: 18px;
   text-shadow:none !important;
   border:none !important;
   box-shadow:none !important;
-  color:rgb(207,208,203);
+
 }
 
-.right{
-  margin-right:20px;
-}
+/*.containerLeft{
+padding-right: 10%;
+}*/
 
-.top{
-margin-bottom: 20px;
-}
 
 .light{
   background-color: rgb(207,208,203);
@@ -256,12 +262,9 @@ margin-bottom: 20px;
   box-shadow:none !important;
   margin-top:50px;
   margin-bottom:50px;
+  color: rgb(236,233,226) !important;
 }
 
-button a{
-    text-decoration: none !important;
-    color: rgb(236,233,226) !important;
-}
 
 #wrapper{
   min-height: 100%;
