@@ -339,12 +339,17 @@ footer{
 /*child of container*/
 .card {
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
   transition:transform 1s;
+
 }
 
 .card, .front, .back{
   backface-visibility: hidden;
   transform:rotateY(180deg);
+  -webkit-transform:rotateY(180deg);
+  -moz-transform:rotateY(180deg);
+  -o-transform:rotateY(180deg);
 }
 
 /*Styles the text of the words before the turn to Emojis*/

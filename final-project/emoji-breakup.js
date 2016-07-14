@@ -94,7 +94,7 @@ function showNouns (event){
         clickedVerbEl.textContent = "";
         clickedVerbEl.appendChild(clonedVerbImg);
 
-/        var parent = $(clonedVerbImg).parent();
+        var parent = $(clonedVerbImg).parent();
         if ($(clonedVerbImg).parent().get(0).tagName==="IMG") {
         var grandParent = $(clonedVerbImg).parents("SPAN");
         console.log("this is cnew parent", grandParent);
