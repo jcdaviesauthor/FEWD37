@@ -1,0 +1,38 @@
+/*NAV NAV NAV NAV NAV NAV */
+#navHome{
+  float: right;
+  font-family: 'Muli', sans-serif;
+  font-size: 15px;
+  color:rgb(57,57,57);
+  margin-bottom: -25px;
+}
+
+.homeBarli{
+  display: inline;
+}
+
+li a{
+    text-decoration: none !important;
+    color:rgb(57,57,57) !important;
+}
+
+#homeHome{
+  margin-right:50px;
+
+}
+#aboutHome{
+  margin-right:50px;
+}
+
+#devHome{
+  margin-right: 50px;
+}
+
+.clearFix:before, .clearFix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}

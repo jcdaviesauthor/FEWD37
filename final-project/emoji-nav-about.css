@@ -1,0 +1,116 @@
+/*EMOJI HOME PAGE*/
+body{
+  margin:0%;
+  font-family: 'Muli', sans-serif;
+  color: rgb(57,57,57);
+}
+
+/*genesisSection: TOP HALF OF ABOUT PAGE.*/
+
+.homeH1{
+  color: rgb(204,48,125);
+  font-family:'Muli', sans-serif;
+  font-weight:bold;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#genesisSection {
+  display: block;
+  margin-bottom: 30px;
+}
+
+#homeHourGlass{
+  margin-left:20%;
+  position: absolute;
+  margin-top: 20%;
+}
+
+#hourGlassCircle {
+  width: 200px;
+  height: 200px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  background-color: rgb(204,48,125);
+  position:relative;
+  left:42%;
+}
+
+#historySection{
+  background-color: rgb(234,227,227);
+  padding-bottom: 20px;
+}
+.historyText{
+  margin-left:54px;
+  margin-right: 35px;
+  /*text-align: center;*/
+
+}
+#hiero{
+  text-align: center;
+}
+
+
+#testimonials{
+  margin-top: -20px;
+  padding-bottom: 30px;
+  color: rgb(57,57,57);
+}
+.homeH2{
+  color: rgb(57,57,57);
+  font-family: 'Muli', sans-serif;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 7px;
+}
+
+#quoteAndText{
+display: inline;
+}
+
+#quote{
+  width: 40px;
+  margin-left: 270px;
+  margin-top: -100px;
+}
+
+#testimonialText{
+  text-align: center;
+  width:600px;
+  margin: auto;
+  margin-top: -20px;
+
+}
+#testimonialsPeople{
+  margin-top: 100px:
+  padding-top:100px:
+}
+
+#testimonialsPeople{
+  text-align: center;
+  padding-top: 20px;
+}
+
+.peopleImg{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#brittneyDiv{
+  margin-left:-105px;
+}
+
+.brittney{
+text-align: center;
+}
+
+#brittneyStudent{
+color: rgb(204,48,125);
+}
+
+#brittneyWellington{
+  font-size: 12px;
+  margin-top: -10px;
+}

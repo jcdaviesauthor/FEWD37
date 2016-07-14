@@ -1,0 +1,101 @@
+<style>
+body {
+  font-family: sans-serif;
+  margin: 2em 4em;
+}
+table {
+  margin-bottom: 1em;
+}
+td {
+  border: 1px solid #ccc;
+  padding: 1em;
+}
+button {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom-width: 2px;
+  border-radius: 5px; font-size: inherit;
+  color: white;
+  background-color: #049cd8;
+  padding: .5em 1em;
+  cursor: pointer;
+}
+</style>
+
+<h1>Spreadsheet</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td contenteditable>Avand</td>
+      <td contenteditable>Instructor</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td contenteditable>Sandi</td>
+      <td contenteditable>TA</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td contenteditable>Yana</td>
+      <td contenteditable>Student</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td contenteditable>Maks</td>
+      <td contenteditable>Student</td>
+    </tr>
+  </tbody>
+</table>
+
+<button id="add-row">Add a Row</button>
+<button id="add-column">Add a Column</button>
+
+<script>
+//get the table
+var table = document.querySelector("table tbody");
+
+//add row FYI (td=cell) (tr=rows)
+function addRow() {
+  //create a row
+  var row = document.createElement("tr");
+  // Then find the last cell in the last row on the page
+  var lastRowCells = table.querySelectorAll("tr:last-child td");
+// When get to last cell in column create another cell in column
+  for (var i = 0; i < lastRowCells.length; i++) {
+    //Creating a cell at the end of each column???
+    var cell = document.createElement("td");
+  // don't get the first part of this - the "if"???
+    if (i == 0) {
+      cell.textContent = table.querySelectorAll("tr").length + 1;
+    } else {
+          //setting new cell's atribute to editable
+          cell.setAttribute("contenteditable", true);
+        }
+        //Append cell to the row, this is not working, help???
+        row.appendChild(cell);
+      }
+      //append row to table
+      table.appendChild(row);
+}
+
+//Add column (td=cell) (tr=rows)
+function addColumn(){
+//find all the rows in the table??? Why create Element first above abf after here??
+  var rows = table.querySelectorAll("tr");
+    for (var i = 0; i < rows.length; i++) {
+      //if the rows are less than the total length of the array ad one cell
+      var cell = document.createElement("td");
+      //setting new cell's atribute to editable
+      cell.setAttribute("contenteditable", true);
+      //append column to table
+      rows[i].appendChild(cell);
+    }
+  }
+//Onclick of button for "add row" run the function "addRow"
+document.querySelector("#add-row").addEventListener("click", addRow)
+//Onclick of button for "add column" run the function "addRow"
+document.querySelector("#add-column").addEventListener("click", addColumn)
+
+
+</script>

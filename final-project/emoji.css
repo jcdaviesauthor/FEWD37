@@ -1,0 +1,94 @@
+/*EMOJI HOME PAGE*/
+body{
+  margin:0%;
+  font-family: 'Muli', sans-serif;
+  color: rgb(57,57,57);
+}
+
+/*//BUNNY SECTION, TOP HALF OF HOME PAGE.*/
+.homeH1{
+  color: rgb(204,48,125);
+  font-family:'Muli', sans-serif;
+  font-weight:bold;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+#bunnySection {
+  display: block;
+  margin-bottom: 30px;
+}
+
+#homeBunny{
+  margin-left:10%;
+  position: absolute;
+  margin-top: 15px;
+}
+
+#bunnyCircle {
+  width: 200px;
+  height: 200px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  background-color: rgb(204,48,125);
+  position:relative;
+  left:40%;
+}
+
+#madLibSection{
+  background-color: rgb(234,227,227);
+  height: 400px;
+
+}
+#madLibComponents{
+  width: 730px;
+  margin: auto;
+}
+
+.homeH2{
+  color: rgb(57,57,57);
+  font-family: 'Muli', sans-serif;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 13px;
+}
+
+.madLibBoxes{
+  display: inline-block;
+  margin: auto;
+  /*TYPO*/
+  postion: absolute;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.square{
+  width: 175px;
+  height: 175px;
+  background-color: rgb(204,48,125);
+  text-align: center;
+}
+
+.square img {
+  padding-top: 20px;
+}
+/*HELP with this formating need to move photos down*/
+/*.square .standardImg{
+  padding-top: 30px !important;
+}*/
+/*
+.impAndScreamImg{
+  margin-top:-50px;
+
+}*/
+
+.rec {
+  width: 175px;
+  height: 35px;
+  background-color: white;
+  color: rgb(57,57,57);
+  text-align: center;
+  padding-top: 20px;
+  font-family:'Muli', sans-serif;
+}

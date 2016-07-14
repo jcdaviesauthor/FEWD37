@@ -1,0 +1,62 @@
+
+button{
+  color: white;
+  background-color: purple;
+  border-radius: 6px;
+  text-decoration:none;
+  font-size: 15px;
+  padding: 15px;
+}
+
+input{
+  border-color: grey;
+  border-radius: 4px;
+  padding: 15px;
+  font-size: 15px;
+  margin: 10px;
+}
+
+/*style comment boxes*/
+
+body {
+  background-color: gray;
+}
+
+  .commentBox {
+    width: 400px;
+    /*height: 100px;*/
+    color: white;
+    border: 20px solid purple;
+    position: relative;
+    background-color: purple;
+    margin-bottom: 50px;
+  }
+li{
+  list-style: none;
+}
+
+  .commentBox::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border: 40px solid purple;
+    border-top-color: purple;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-width: 50px;
+    border-left-width: 50px;
+    position: absolute;
+    bottom: -100px;
+    /*right: 10%;*/
+    margin-left: 50px;
+}
+
+
+.userNameBox{
+    margin-top: -30px;
+    margin-left: 150px;
+    margin-bottom: 30px;
+    height: 18px;
+
+}

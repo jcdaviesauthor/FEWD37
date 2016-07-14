@@ -1,0 +1,41 @@
+/*NAV NAV NAV NAV NAV NAV */
+/*nav{
+  height: 50px;
+}*/
+#navHome{
+  float: right;
+  /*font-family: 'Muli', sans-serif;*/
+  font-size: 18px;
+  /*margin-bottom: -25px;*/
+}
+#navUl{
+  text-decoration: none !important;
+  padding-top:10px;
+}
+
+.homeBarli{
+  display: inline;
+}
+
+li a{
+    text-decoration: none !important;
+    color: rgb(93,104,106) !important;
+}
+
+
+#resumeHome{
+  margin-right:50px;
+}
+
+#aboutHome{
+  margin-right: 50px;
+}
+
+.clearFix:before, .clearFix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}

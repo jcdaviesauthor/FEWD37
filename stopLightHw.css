@@ -1,0 +1,107 @@
+
+    .buttonStop {
+  padding: 11px 20px 10px 20px;
+  margin: 0px 25px 20px 0px;
+  background-color: red;
+  color: white;
+  border-radius: 6px;
+  text-decoration:none;
+  font-size: 15px;
+  position: relative;
+  bottom: 100px
+  left: 300px
+}
+  .buttonSlow {
+  padding: 11px 20px 10px 20px;
+  margin: 0px 25px 20px 0px;
+  background-color: yellow;
+  color: black;
+  border-radius: 6px;
+  text-decoration:none;
+  font-size: 15px;
+  position: relative;
+  bottom: 100px
+  left: 300px
+}
+
+  .buttonGo {
+  padding: 11px 20px 10px 20px;
+  margin: 0px 25px 20px 0px;
+  background-color: green;
+  color: white;
+  border-radius: 6px;
+  text-decoration:none;
+  font-size: 15px;
+  position: relative;
+  bottom: 100px
+  left: 300px
+}
+
+  .buttonCaution {
+  padding: 11px 20px 10px 20px;
+  margin: 0px 25px 20px 0px;
+  background-color: orange;
+  color: white;
+  border-radius: 6px;
+  text-decoration:none;
+  font-size: 15px;
+  position: relative;
+  bottom: 100px
+  left: 300px
+}
+
+  nav li{
+    display: inline;
+  }
+
+  section {
+    box-sizing: border-box;
+    box-shadow: 0px 5px 50px 0px rgba(0, 0, 0, 0.2);
+    width: 155px;
+    margin:auto;
+    padding:5px 15px 20px 25px;
+    border:1px solid;
+    border-color: rgb(193,193,193);
+    border-radius: 10px;
+    background-color: rgb(254,187,58);
+  }
+
+.circleTopOn{
+  width:100px;
+  height: 100px;
+  border-radius: 50px;
+  margin-top: 20px;
+  border: 2px solid;
+  background-color: red;
+  transition: background-color: 300ms;
+}
+.circleMiddleOn{
+  width:100px;
+  height: 100px;
+  border-radius: 50px;
+  margin-top: 10px;
+  border: 2px solid;
+  background-color: yellow;
+  transition: background-color: 300ms;
+}
+
+.circleBottomOn{
+  width:100px;
+  height: 100px;
+  border-radius: 50px;
+  margin-top: 10px;
+  border: 2px solid;
+  background-color: green;
+  transition: background-color: 300ms;
+
+}
+
+.stopLightOff{
+  width:100px;
+  height: 100px;
+  border-radius: 50px;
+  margin-top: 10px;
+  border: 2px solid;
+  background-color: rgb(76,76,76);
+  transition: background-color: 300ms;
+}

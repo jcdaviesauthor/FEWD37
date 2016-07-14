@@ -1,0 +1,14 @@
+
+<ul>
+</ul>
+<script>
+function createListItem (TextContent){
+//create a new <li>
+var li = document.createElement ("li");
+li.textContent = "Uno";
+var parent = document.querySelector("ul");
+parent.appendChild(li);
+}
+createListItem();
+createListItem("...");
+</script>

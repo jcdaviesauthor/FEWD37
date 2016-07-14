@@ -1,0 +1,374 @@
+body{
+  margin:0%;
+  font-family: 'Muli', sans-serif;
+}
+/*NAV NAV NAV NAV NAV NAV */
+li a{
+    text-decoration: none !important;
+    color:white !important;
+}
+#navHome{
+    font-size: 16px;
+  }
+
+
+/*CSS FOR IPHONE BREAKUP CSS FOR IPHONE BREAKUP CSS FOR*/
+#titleHeader{
+  background-color: rgb(204,48,125);
+  font-family:'Muli', sans-serif;
+  padding-top: 15px;
+}
+
+#titleImage{
+  position: absolute;
+  margin-top: 17%;
+  margin-left: 27%;
+  transition: transform 3s;
+}
+
+#iPhoneCircle{
+  width: 200px;
+  height: 200px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  background-color: rgb(234,227,227);
+
+  margin-left: 10%;
+  position:relative;
+  display: inline-block;
+}
+
+.spin {
+  transform: rotate(1080deg);
+}
+
+#libTitle{
+  margin-left: 5%;
+  font-size: 60px;
+  color: white;
+  font-family:'Muli', sans-serif;
+  color: white;
+  display: inline;
+  padding-bottom: 50px;
+  position: relative;
+  top:-70px;
+}
+/*Font size for all fo the mad libs*/
+.mad{
+  font-size: 18px;
+}
+
+/*DIRECTIONS DIRECTIONS DIRECTIONS DIRECTIONS*/
+#directionsTitle{
+  font-family: 'Muli', sans-serif;
+  font-size: 23px;
+}
+
+#introMonkey{
+  display: inline;
+  margin-left: 1060px;
+  position: relative;
+  top:-220px;
+}
+
+/*fixing margins*/
+#monkeyDiv{
+  height: 260px;
+}
+
+.getEmojiOn{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#monkeyBubbleDirections{
+  line-height: 175%;
+  margin-top: 20px;
+  width: 825px;
+  color: black;
+  border: 15px solid rgb(14,116,255);
+  position: relative;
+  background-color: white;
+  border-radius: 20px;
+  margin-left: 150px;
+  padding-left:10px;
+  padding-right:10px;
+}
+/*triangle at bottom of monkey bubble*/
+#monkeyBubbleDirections::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border:10px solid rgb(14,116,255);
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: rgb(14,116,255);
+  border-left-width: 40px;
+  position: absolute;
+  bottom: 120px;
+  margin-left: 850px;
+}
+
+/*TABLES WITH EMOJI CHOICES*/
+.table{
+  display:none;
+}
+.tableTitles{
+  color: rgb(204,48,125);
+}
+
+main {
+  position: relative;
+}
+
+.tableOn{
+  display:block;
+  box-sizing: border-box;
+  border:5px solid rgb(204,48,125);
+  float: right;
+  width: 160px;
+  background-color: white;
+  border-radius: 6px;
+  position: fixed;
+  top:200px;
+  left:83%;
+}
+
+th{
+  color: white;
+  font-family: 'Muli', sans-serif;
+  font-size: 18px;
+}
+
+/*First section of the story*/
+#madLibIntro{
+  line-height: 175%;
+  width: 835px;
+  color: black;
+  border: 20px solid rgb(234,227,227);
+  position: relative;
+  background-color: rgb(234,227,227);
+  margin-bottom: 50px;
+  border-radius: 20px;
+  margin-left: 150px;
+}
+/*triangle at bottom of monkey bubble*/
+#madLibIntro::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border: 40px solid rgb(234,227,227);
+  border-top-color: rgb(234,227,227);
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-right-width: 15px;
+  border-left-width: 15px;
+  position: absolute;
+  bottom: -90px;
+  margin-left: 0px;
+}
+/*orientation of mono emoji*/
+#monoStoryBub1{
+  margin-top: -35px;
+  margin-left: 75px;
+  margin-bottom: 10px;
+  height: 100px;
+}
+
+#textBubBackground{
+  background-color: rgb(31,224,100);
+  padding:20px;
+}
+
+.madLibBubbles{
+  margin-left: 300px;
+  line-height: 175%;
+}
+
+#finalP{
+  font-size: 30px;
+  margin-left: 340px;
+  width: 600px;
+  margin-top: -75px;
+}
+
+.textMessage {
+  width: 450px;
+  color: black;
+  border: 20px solid rgb(234,227,227);
+  position: relative;
+  background-color: rgb(234,227,227);
+  margin-bottom: 50px;
+  border-radius: 20px;
+}
+/*triangle at bottom*/
+.textMessage::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border: 40px solid rgb(234,227,227);
+  border-top-color: rgb(234,227,227);
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-right-width: 15px;
+  border-left-width: 15px;
+  position: absolute;
+  bottom: -90px;
+  margin-left: 420px;
+}
+  /*Bubble at the top*/
+  .brad{
+    background-color: rgb(14,116,255);
+    border: 20px solid rgb(14,116,255);
+    color: white;
+}
+/*triangle at bottom*/
+  .brad::before {
+    border: 40px solid rgb(14,116,255);
+    border-top-color: rgb(14,116,255);
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-width: 15px;
+    border-left-width: 15px;
+    margin-left: 0px;
+}
+
+/*Creates pading to align the name to the speakin bubbles*/
+.textBrittney{
+    margin-top: -35px;
+    margin-left: 370px;
+    margin-bottom: 10px;
+    height: 18px;
+}
+.textBrad{
+    margin-top: -35px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    height: 18px;
+}
+
+/*Conclusion block*/
+#madLibConclusion{
+  line-height: 175%;
+  margin-top: 30px;
+  width: 835px;
+  color: black;
+  border: 20px solid rgb(234,227,227);
+  position: relative;
+  background-color: rgb(234,227,227);
+  margin-bottom: 50px;
+  border-radius: 20px;
+  margin-left: 150px;
+}
+
+/*triangle at bottom of monkey bubble*/
+#madLibConclusion::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border: 40px solid rgb(234,227,227);
+  border-top-color: rgb(234,227,227);
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-right-width: 15px;
+  border-left-width: 15px;
+  position: absolute;
+  bottom: -90px;
+  margin-left: 0px;
+}
+
+#monoStoryBub2{
+  margin-top: -35px;
+  margin-left: 75px;
+  margin-bottom: 10px;
+  height: 100px;
+}
+.libsLink{
+  color:rgb(14,116,255);
+  text-decoration: underline;
+}
+
+/*translate button, translate emojis to words*/
+button{
+  padding: 10px 15px 10px 15px;
+  background-color: rgb(204,48,125);
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 24px;
+  position: relative;
+  bottom: 100px
+  left: 300px
+  color:transparent !important;
+  text-shadow:none !important;
+  border:none !important;
+  box-shadow:none !important;
+  font-family: 'Muli', sans-serif;
+  margin-left: 540px;
+  margin-top: 0px;
+}
+
+/*TO GIVE SPACE AT THE BOTTOM OF THE HOME PAGE*/
+footer{
+  background-color: white;
+  height:50px;
+}
+
+/*FLIP ANNIMATION*/
+.emoji {
+  width:45px;
+}
+
+.hide{
+  display:none:
+}
+
+/*Container houses the 3D space*/
+/*parent of card*/
+.container {
+  position: relative;
+  perspective: 800px;
+}
+/*A wrapper for the 3D object*/
+/*child of container*/
+.card {
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transition:transform 1s;
+
+}
+
+.card, .front, .back{
+  backface-visibility: hidden;
+  transform:rotateY(180deg);
+  -webkit-transform:rotateY(180deg);
+  -moz-transform:rotateY(180deg);
+  -o-transform:rotateY(180deg);
+}
+
+/*Styles the text of the words before the turn to Emojis*/
+.text, .back {
+  width:20px;
+  text-decoration:underline;
+  font-weight:bold;
+  border:5px;
+  border-color: blue;
+}
+
+/*may want to use for other animation*/
+/*.explode {
+  transform: scale(5.0);
+  transition: all 2s;
+  opacity: 0.0;
+}*/
+
+.arrowup{
+  width: 300px;
+  margin:auto;
+}
